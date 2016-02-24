@@ -15,16 +15,57 @@
 ========================================================  */
 
 $(document).ready(function () {
-    // SCROLL SCRIPTS 
-        $('.scroll-me a').bind('click', function (event) { //just pass scroll-me class and start scrolling
+    // Script de Scroll 
+        $('.scroll-me a').bind('click', function (event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1000, 'easeInOutQuad');
         event.preventDefault();
         });
-    // BACKGROUND VIDEO SCRIPTS
-        $(function () {
-            $(".player").mb_YTPlayer(); // .player - class to add for playing video ( see the div above to understand)
+
+    // Inicializacion del mapa de covertura
+        var map = new GMaps({
+            div: '#cover-map',
+            lat: -12.043333,
+            lng: -77.028333
         });
+
+        map.addMarker({
+          lat: -12.043333,
+          lng: -77.028333,
+          title: 'Lima',
+          click: function(e) {
+            alert('You clicked in this marker');
+          }
+        });
+
+        $('#cover-map').html(map);
+
+            // Checking for CSS 3D transformation support
+    $.support.css3d = supportsCSS3D();
+    
+    var formContainer = $('#formContainer');
+    
+    formContainer.find('form').submit(function(e){
+        // Preventing form submissions. If you implement
+        // a backend, you might want to remove this code
+        e.preventDefault();
+    });
+    
+    // A helper function that checks for the 
+    // support of the 3D CSS3 transformations.
+    function supportsCSS3D() {
+        var props = [
+            'perspectiveProperty', 'WebkitPerspective', 'MozPerspective'
+        ], testDom = document.createElement('a');
+          
+        for(var i=0; i<props.length; i++){
+            if(props[i] in testDom.style){
+                return true;
+            }
+        }
+        
+        return false;
+    }
 });
