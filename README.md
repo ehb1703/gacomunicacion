@@ -1,1 +1,1 @@
-# Pagina Infomrativa de Ga Comunicacion
+# Pagína Informativa de Ga Comunicación
