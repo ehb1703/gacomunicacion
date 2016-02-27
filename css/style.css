@@ -64,31 +64,15 @@ section {
 
 /*STYLE OF BACKGROUND IMAGE*/
 #home {
-    background: url(../img/home.png) no-repeat center center; /*Full Witdth background image*/
+    /*background: url(../img/home.png) no-repeat center center; /*Full Witdth background image*/*/
     padding: 0;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
     height: 100%;
-}
-
-.message {
-    background: url(../img/mensaje.png) no-repeat center center; /*Full Witdth background image*/
-    padding: 0;
-    -webkit-background-size: cover;
-    background-size: cover;
-    -moz-background-size: cover;
     width: 100%;
-    height: 812px;
 }
-
-#home h1 {
-    padding-top: 80px;
-    font-weight: 900;
-    font-size: 100px;
-    font-family: 'Browallia New';
-}
-/*SMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
+/*SIMPLE CLASS TO ADJUST SECTION PADDING & HEIGHT*/
 
 /*CLASS TO FORMAT TEXT*/
 .p-cls {
@@ -120,7 +104,7 @@ section {
 /*================================
     PORTFOLIO / WORK SECTION STYLES
 ==================================*/
-.portfolio-item img:hover { /* POSTFOLIO IMAGE BIG ON HOVER */
+.portfolio-item img:hover { /* PORTFOLIO IMAGE BIG ON HOVER */
     cursor: pointer;
     -webkit-transform: scale(1.1, 1.1);
     -ms-transform: scale(1.1, 1.1);
@@ -158,13 +142,6 @@ section {
     padding-bottom:50px;
     padding-top:50px;
 }
-    #clients img {
-        opacity:0.5;
-        cursor:pointer;
-    }
-        #clients img:hover {
-            opacity:1;
-        }
 /*================================
     FOOTER SECTION STYLES
 ==================================*/
@@ -196,6 +173,10 @@ footer a, footer a:hover {
     height: 100%;
     width: 100%;
 }
+
+/*================================
+    CLIENT SECTION
+==================================*/
 
 .portfolio-item .col-md-3{
     float: left;
