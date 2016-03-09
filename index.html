@@ -37,9 +37,6 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">
-                    <!-- <span class="brand">Grupo Arte y Comunicación</span> -->
-                </a>
             </div>
             <div class="navbar-collapse collapse navbar-right scroll-me">
                 <ul class="nav navbar-nav ">
@@ -50,28 +47,33 @@
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </div>
-
         </div>
     </div>
     
     <!-- NAVBAR CODE END -->
     <div id="home">
-        <img src="img/home.png" class="img-responsive">            
+        <div class="row">
+            <img src="img/home.png" class="img-responsive">                    
+        </div>
     </div>
     <!--HOME SECTION END  -->
     
     <!-- COVER UP SECTIOS -->
     <section id="coverup">
+        <div class="row">
             <img src="img/mapa.png" class="img-responsive">
+        </div>
     </section>
     <!-- EOF COVER UP SECTION -->
 
-    <div class="parallax-like">
-        <div class="overlay">
-            <!-- <div class="message"></div> -->
+    <!-- CLIENT SECTION -->
+    <section id="message">
+        <div class="row">
             <img src="img/mensaje.png" class="img-responsive">
         </div>
-    </div>
+    </section>
+    <!-- EOF CLIENT SECTION -->
+
     <!--PARALLAX LIKE / STATS SECTION END  -->
 
     <section id="services">
@@ -102,47 +104,45 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact">
-        <div class="row" id="contact-form">
-            <div class="pull-left col-md-4">
-                <div class="container" id="formContainer">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="formContainer">
                   <form class="form-signin" id="login" role="form">
+                  <p>Acceso a Clientes</p>
                     <select class="form-control">
+                        <option>Seleccione su Sistema</option>
                         <option>Sistema de Noticias</option>
                         <option>Sistema de Spots</option>
                     </select>
-                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Email address" required>
-                    <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Password" required>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Ingresar</button>
+                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
+                    <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
+                    <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
                   </form>
                 </div>
             </div>
-            <div class="pull-right col-md-8">
-                <div class="row text-center ">
-                    <div class="">
-                        <h2 class="head-set">Ga Comunicacion, S.C.</h2>
-                        <p>
-                            Veracidad y Oportunidad
-                        </p>
-                        <br />
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="right">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6 contact-info">
+                        <p class="text-info">Para nosotros es muy importante tu opinión.</p>
+                        <p class="text-info second">Agradeceremos todos tus comentarios y sugerencias</p>
+
+                        <p class="gacom">G.A. Comunicación, SC.</p>
+
+                        <p class="info-address">La Capilla N°. 86, Los Pastores</p>
+                        <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>
+                        <p class="info-address"><strong>Telefonos :</strong> <a href="tel:555373 3225">(55) 5373 3225</a> y 
+                        <a href="tel:5553739889">(55) 5373 9889</a></p>
+                        <p class="info-address"><strong>Correo :</strong> <a href="mailto:jlga@gacomunicacion.com">jlga@gacomunicacion.com</a></p>
                     </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <p>La Capilla N°. 86, Los Pastores</p>
-                        <p>Naucalpan, Estado de México C.P. 53340</p>
-                        <p><strong>Telefonos :</strong> <a href="tel:555373 3225">(55) 5373 3225</a> y 
-                       <a href="tel:5553739889">(55) 5373 9889</a></p>
-                        <p><strong>Correo :</strong> <a href="mailto:jlga@gacomunicacion.com">jlga@gacomunicacion.com</a></p>
+                    <div class="col-md-3">
+                        <img src="img/logoInfo.png" class="img-responsive" id="logo">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- EOF CONTACT SECTION -->
-    <footer>
-        © 2016 Grupo Arte y Comunicación S.C.</a>
-    </footer>
-    <!-- FOOTER SECTION END-->
     <!-- REQUIRED SCRIPTS FILES -->
     <!-- CORE JQUERY FILE -->
     <script src="js/jquery-1.11.1.js"></script>

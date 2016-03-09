@@ -19,16 +19,14 @@
 /*================================
     GENERAL STYLES
 ==================================*/
-
-@import url(http://fonts.googleapis.com/css?family=Roboto); /* GOOGLE FREE FONTS */
-
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Avenir Next';
+    width: 100%;
 }
 
 section {
     padding-top: 80px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
 }
 
 .head-set {
@@ -54,6 +52,10 @@ section {
 .navbar-default .navbar-toggle .icon-bar {
     background-color:#fff;
 }
+
+.container{
+  width: 100%;
+}
 /*================================
     HOME SECTION STYLES
 ==================================*/
@@ -73,7 +75,7 @@ section {
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 
@@ -102,11 +104,11 @@ section {
     CLIENTS SECTION STYLES
 ==================================*/
 
-#clients {
-    background-color:#f4f4f4;
-    padding-bottom:50px;
-    padding-top:50px;
+.clients{
+  width: 100%;
+  padding: 0;
 }
+
 /*================================
     FOOTER SECTION STYLES
 ==================================*/
@@ -187,8 +189,7 @@ footer a, footer a:hover {
   -ms-user-select: none;
   user-select: none;
   position: relative;
-  font: 15px 'Segoe UI',Arial,sans-serif;
-  background-color: #EAEBE5;
+  font: 15px;
   height: auto;
   padding: 10px;
   color:#7e8c8d;
@@ -202,9 +203,10 @@ footer a, footer a:hover {
   z-index: 2;
 }
 .form-signin input[type="email"] {
-  margin-bottom: -1px;
+  margin-bottom: 10px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
@@ -216,11 +218,167 @@ footer a, footer a:hover {
   z-index:100;
 }
 
+.form-signin select{
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
 #login{
   background: #f3f3f3;
   z-index: 100;
 }
 
+.btn-primary{
+  background: rgb(35, 133, 161);
+}
+
+.btn-primary:hover{
+  background: #005d6e;
+}
 
 
+/*================================
+        SECCIÓN DE CONTACTO
+==================================*/
+#contact .row{
+  width: 100%;
+}
 
+.right: {
+  float: right;
+}
+
+@media screen and ( min-width: 1761px ){
+  #contact .row{
+    display: inline-flex;
+  }
+
+  .contact-info p{
+   text-align: right;
+  }
+
+  /* Informacion presente antes del Nombre de la Empresa */
+  .text-info{
+    font-style: oblique;
+    color: #646466;
+    margin: 0px;
+  }
+
+  /* Nombre de la Empresa */
+  .gacom{
+    color: rgb(35, 133, 161);
+    font-weight: bold; 
+    font-size: xx-large;
+    margin: 10px;
+  }
+
+  /* Informacion de Contacto y Dirección de la Empresa */
+  .info-address{
+    font-style: normal;
+    color: #9a9a9d;
+    padding: 0px;
+    margin: 0px;
+    font-size: large;
+  }
+
+  .info-address a {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(35, 133, 161); 
+  }
+  .info-address a:hover {
+    color: #005d6e;
+  }
+
+  #logo{
+    margin-top: 50px;
+  }
+}
+
+@media screen and ( max-width: 1760px ){
+  .contact-info p{
+   text-align: right;
+  }
+
+  /* Informacion presente antes del Nombre de la Empresa */
+  .text-info{
+    font-style: oblique;
+    color: #646466;
+    margin: 0px;
+    font-size: small;
+  }
+
+  /* Nombre de la Empresa */
+  .gacom{
+    color: rgb(35, 133, 161);
+    font-weight: bold; 
+    font-size: large;
+    margin: 10px;
+  }
+
+  /* Informacion de Contacto y Dirección de la Empresa */
+  .info-address{
+    font-style: normal;
+    color: #9a9a9d;
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+  }
+
+  .info-address a {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(35, 133, 161); 
+  }
+  .info-address a:hover {
+    color: #005d6e;
+  }
+}
+
+@media screen and (max-width: 400px ){
+
+  .contact-info p{
+   text-align: right;
+  }
+
+  /* Informacion presente antes del Nombre de la Empresa */
+  .text-info{
+    font-style: oblique;
+    color: #646466;
+    margin: 0px;
+    font-size: x-small;
+  }
+
+  /* Nombre de la Empresa */
+  .gacom{
+    color: rgb(35, 133, 161);
+    font-weight: bold; 
+    margin: 10px;
+  }
+
+  /* Informacion de Contacto y Dirección de la Empresa */
+  .info-address{
+    font-style: normal;
+    color: #9a9a9d;
+    padding: 0px;
+    margin: 0px;
+    font-size: x-small;
+  }
+
+  .info-address a {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(35, 133, 161); 
+  }
+  .info-address a:hover {
+    color: #005d6e;
+  }
+
+
+}
+
+/*.brand-img{
+  background-image: url('../img/logoInfo.png') no-repeat center;
+}*/
