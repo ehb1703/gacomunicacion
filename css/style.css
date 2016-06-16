@@ -378,7 +378,12 @@ footer a, footer a:hover {
 
 
 }
-
+@media screen and (max-width: 480px) {
+    #services img {
+       width: 70%;
+       padding: 7%;
+    }
+}
 /*.brand-img{
   background-image: url('../img/logoInfo.png') no-repeat center;
 }*/
