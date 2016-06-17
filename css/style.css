@@ -378,12 +378,143 @@ footer a, footer a:hover {
 
 
 }
-@media screen and (max-width: 480px) {
-    #services img {
-       width: 70%;
-       padding: 7%;
+@media screen and (max-width: 990px) {
+  #logo-img {
+    width: 45%;
+    margin: auto;
+}
+    #intro-div{
+      border-left: 0px;
+      border-right: 0px;
+      border-top: 2px solid rgba(0, 0, 0, 0.18);
+      border-bottom: 2px solid rgba(0, 0, 0, 0.18);
     }
 }
 /*.brand-img{
   background-image: url('../img/logoInfo.png') no-repeat center;
 }*/
+#home{
+  padding-top: .7%;
+}
+#home-row {
+  background-image: url('../img/FONDOencabezado.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+.row{
+  margin-right: 0px; 
+  margin-left: 0px;
+}
+#logo-row{
+  margin-top: 0px;
+}
+#logo-img{
+  width: 60%;
+  margin:auto;
+}
+.textAv{
+  font-family: 'Avenir Next';
+  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
+}
+#title-text{
+  font-weight: normal;
+  font-size: 24;
+  color: #FFFFFF;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+#sub-home{
+   background-color: rgba(0,78,96,0.60);
+
+}
+#text-divs{
+  color: #002E3C;
+  font-size: 18;
+  background-color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  text-align: center;
+}
+
+#intro-div{
+  color: #002E3C;
+  font-size: 18;
+  background-color: #ffffff;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  border-left: 2px solid rgba(0, 0, 0, 0.18);
+  border-right: 2px solid rgba(0, 0, 0, 0.18);
+}
+#text-divs div{
+  padding: 2%;
+}
+#coverup{
+  padding-top: 5%;
+  padding-bottom: 30%;
+}
+#mapa{
+  padding-top: 5%;
+}
+#cobertura-div{
+  background-color:#b6c9d0; 
+  color: #03384a;
+}
+#cobertura-div span{
+  font-size: 300%;
+  font-weight: 600; 
+  padding: 3%;
+}
+#services-row img{
+  width: 80%;
+  margin: auto;
+  padding-top: 3%;
+}
+#cobertura-list ul li{
+  color:#529095;
+  font-size: 15;
+  border: none;
+  padding: 1.8px 15px;
+}
+#cobertura-list ul li:hover{
+  color:#0d3942;
+  cursor: pointer;
+}
+#message{
+  padding-top: 10%;
+}
+#fondo-div{
+  background-image: url('../img/FONDOcentral.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+#message .row{
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+#message span{
+  font-size: 30;
+  color: white;
+  text-align: center;
+}
+#sub-fondo-div{
+  background-color: rgba(0,78,96,0.70);
+}
+#clients{
+  background-image: url('../img/FONDOclientes.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+}
+#sub-client{
+  background-color: rgba(0,78,96,0.70);
+}
+#clientes1 div{
+  padding-top: 2%;
+}
+#clientes2 div{
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
