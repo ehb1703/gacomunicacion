@@ -322,10 +322,7 @@ footer a, footer a:hover {
 
 }
 @media screen and (max-width: 990px) {
-  #logo-img {
-    width: 45%;
-    margin: auto;
-    }
+
     #intro-div{
       border-left: 0px;
       border-right: 0px;
@@ -421,14 +418,27 @@ footer a, footer a:hover {
     padding-top: 13%;
     padding-bottom: 20%;
   }
-
+  #title-text{
+    font-weight: normal;
+    font-size: 16;
+    color: #FFFFFF;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  #logo-img {
+    width: 51%;
+    margin: auto;
+  }
 }
 /*Pantalla Gde*/
 @media screen and (min-width: 990px) {
+    #logo{
+      width: 93%;
+  }
   #logo-img {
-    width: 45%;
+    width: 60%;
     margin: auto;
-    }
+  }
     #intro-div{
       border-left: 0px;
       border-right: 0px;
@@ -478,9 +488,7 @@ footer a, footer a:hover {
     text-align: right;
     padding-top: 1%;
   }
-  #logo{
-      width: 93%;
-  }
+
   .info-text{
   font-family: "AvenirPersonalizada";
   font-size: 18;
@@ -498,6 +506,13 @@ footer a, footer a:hover {
   #coverup{
     padding-top: 5%;
     padding-bottom: 20%;
+  }
+  #title-text{
+    font-weight: normal;
+    font-size: 24;
+    color: #FFFFFF;
+    padding-top: 3%;
+    padding-bottom: 3%;
   }
 
 }
@@ -520,21 +535,11 @@ footer a, footer a:hover {
 #logo-row{
   margin-top: 0px;
 }
-#logo-img{
-  width: 60%;
-  margin:auto;
-}
 .textAv{
   font-family: 'Avenir Next';
   src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
 }
-#title-text{
-  font-weight: normal;
-  font-size: 24;
-  color: #FFFFFF;
-  padding-top: 3%;
-  padding-bottom: 3%;
-}
+
 #sub-home{
    background-color: rgba(0,78,96,0.60);
 
