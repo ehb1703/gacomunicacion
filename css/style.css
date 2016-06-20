@@ -15,6 +15,12 @@
 ========================================================  */
 
 
+@font-face
+{
+   font-family: "AvenirPersonalizada";
+   src: url("../fonts/AvenirNextLTPro-It.otf");
+   font-style: 'Italic';         
+}
 
 /*================================
     GENERAL STYLES
@@ -264,37 +270,13 @@ footer a, footer a:hover {
     font-style: oblique;
     color: #646466;
     margin: 0px;
+    font-size: 21;
   }
 
   /* Nombre de la Empresa */
-  .gacom{
-    color: rgb(35, 133, 161);
-    font-weight: bold; 
-    font-size: xx-large;
-    margin: 10px;
-  }
+  
 
-  /* Informacion de Contacto y Dirección de la Empresa */
-  .info-address{
-    font-style: normal;
-    color: #9a9a9d;
-    padding: 0px;
-    margin: 0px;
-    font-size: large;
-  }
 
-  .info-address a {
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(35, 133, 161); 
-  }
-  .info-address a:hover {
-    color: #005d6e;
-  }
-
-  #logo{
-    margin-top: 50px;
-  }
 }
 
 @media screen and ( max-width: 1760px ){
@@ -311,30 +293,7 @@ footer a, footer a:hover {
   }
 
   /* Nombre de la Empresa */
-  .gacom{
-    color: rgb(35, 133, 161);
-    font-weight: bold; 
-    font-size: large;
-    margin: 10px;
-  }
-
-  /* Informacion de Contacto y Dirección de la Empresa */
-  .info-address{
-    font-style: normal;
-    color: #9a9a9d;
-    padding: 0px;
-    margin: 0px;
-    font-size: small;
-  }
-
-  .info-address a {
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(35, 133, 161); 
-  }
-  .info-address a:hover {
-    color: #005d6e;
-  }
+  
 }
 
 @media screen and (max-width: 4010px ){
@@ -352,29 +311,7 @@ footer a, footer a:hover {
   }
 
   /* Nombre de la Empresa */
-  .gacom{
-    color: rgb(35, 133, 161);
-    font-weight: bold; 
-    margin: 10px;
-  }
-
-  /* Informacion de Contacto y Dirección de la Empresa */
-  .info-address{
-    font-style: normal;
-    color: #9a9a9d;
-    padding: 0px;
-    margin: 0px;
-    font-size: x-small;
-  }
-
-  .info-address a {
-    font-style: normal;
-    text-decoration: none;
-    color: rgb(35, 133, 161); 
-  }
-  .info-address a:hover {
-    color: #005d6e;
-  }
+  
 
   #mapa{
      padding-top: 17%;
@@ -404,7 +341,79 @@ footer a, footer a:hover {
     #message{
      padding-top: 0%;
     }
+
+    .gacom{
+    color: rgb(35, 133, 161);
+    font-weight: bold; 
+    margin-top: 58px;
+    margin-right: 0px;
+    margin-bottom: -5px;
+  }
+
+  /* Informacion de Contacto y Dirección de la Empresa */
+  .info-address{
+    font-style: normal;
+    color: #9a9a9d;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .info-address a {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(35, 133, 161); 
+  }
+  .info-address a:hover {
+    color: #005d6e;
+  }
+  #presentacion{
+    text-align: right;
+    padding-top: 15%;
+  }
+  #logo{
+      width: 68%;
+      margin-left: 19%;
+  }
+  .info-text {
+     font-family: "AvenirPersonalizada";
+    font-size: 14px;
+    color: #646466;
+    line-height: 7px;
+  }
+  .gacom{
+    color: rgb(35, 133, 161);
+    font-weight: bold; 
+    margin-top: 29px;
+    margin-right: 0px;
+    margin-bottom: -5px;
+    font-size: 29px;
+  }
+
+  /* Informacion de Contacto y Dirección de la Empresa */
+  .info-address{
+    font-style: normal;
+    color: #9a9a9d;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .info-address a {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(35, 133, 161); 
+  }
+  .info-address a:hover {
+    color: #005d6e;
+  }
+  #text-area{
+    padding-top: 10%;
+  }
 }
+/*Pantalla Gde*/
 @media screen and (min-width: 990px) {
   #logo-img {
     width: 45%;
@@ -425,6 +434,52 @@ footer a, footer a:hover {
     #message{
       padding-top: 5%;
     }
+    #cobertura-list{
+      display: block;
+    }
+    .gacom{
+    color: rgb(35, 133, 161);
+    font-weight: bold; 
+    margin-top: 58px;
+    margin-right: 0px;
+    margin-bottom: -5px;
+    font-size: 29px;
+  }
+
+  /* Informacion de Contacto y Dirección de la Empresa */
+  .info-address{
+    font-style: normal;
+    color: #9a9a9d;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .info-address a {
+    font-style: normal;
+    text-decoration: none;
+    color: rgb(35, 133, 161); 
+  }
+  .info-address a:hover {
+    color: #005d6e;
+  }
+  #presentacion{
+    text-align: right;
+    padding-top: 1%;
+  }
+  #logo{
+      width: 93%;
+  }
+  .info-text{
+  font-family: "AvenirPersonalizada";
+  font-size: 18;
+  color: #646466;
+  line-height: 10px;
+  }
+  #text-area{
+    padding-top: 0%;
+  }
 }
 /*.brand-img{
   background-image: url('../img/logoInfo.png') no-repeat center;
@@ -510,6 +565,7 @@ footer a, footer a:hover {
   font-size: 15;
   border: none;
   padding: 1.8px 15px;
+  margin-bottom:-4px;
 }
 #cobertura-list ul li:hover{
   color:#0d3942;
@@ -550,3 +606,9 @@ footer a, footer a:hover {
   padding-top: 2%;
   padding-bottom: 2%;
 }
+#info{
+  font-size: 18;
+}
+
+
+

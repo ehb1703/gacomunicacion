@@ -212,7 +212,7 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
         <div class="row">
-            <div class="col-md-4 col-md-offset-2 ">
+            <div class="col-md-4 ">
                 <div id="formContainer">
                   <form class="form-signin" id="login" role="form">
                   <p>Acceso a Clientes</p>
@@ -227,25 +227,24 @@
                   </form>
                 </div>
             </div>
-            <div class="col-md-6 ">
-                <div class="right">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-6 contact-info" class="textAv">
-                        <p class="text-info">Para nosotros es muy importante tu opinión.</p>
-                        <p class="text-info second">Agradeceremos todos tus comentarios y sugerencias</p>
+            <div class="col-md-8">
+            <div class="row" id="text-area">
+                <div class="col-md-9" id="presentacion">
+                <p class="info-text">Para nosotros es muy importante tu opinión.</p>
+                <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>
 
-                        <p class="gacom">G.A. Comunicación, SC.</p>
+                <p class="gacom">G.A. Comunicación, SC.</p>
 
-                        <p class="info-address">La Capilla N°. 86, Los Pastores</p>
-                        <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>
-                        <p class="info-address"><strong>Telefonos :</strong> <a href="tel:555373 3225">(55) 5373 3225</a> y 
-                        <a href="tel:5553739889">(55) 5373 9889</a></p>
-                        <p class="info-address"><strong>Correo :</strong> <a href="mailto:jlga@gacomunicacion.com">jlga@gacomunicacion.com</a></p>
-                    </div>
-                    <div class="col-md-3">
-                        <img src="img/logoInfo.png" class="img-responsive" id="logo">
-                    </div>
-                </div>
+                <p class="info-address">La Capilla No. 86, Los Pastores</p>
+                <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>
+                <p class="info-address"><strong>Telefonos :</strong> <a href="tel:555373 3225">(55) 5373 3225</a> y 
+                <a href="tel:5553739889">(55) 5373 9889</a></p>
+                <p class="info-address"><strong>Correo :</strong> <a href="mailto:jlga@gacomunicacion.com">jlga@gacomunicacion.com</a></p>
+            </div>
+             <div class="col-md-3" style="padding-top: 6%;">
+                    <img src="img/GAlogoSINfondo.png" id="logo">
+            </div>
+            </div>
             </div>
         </div>
     </section>
@@ -260,9 +259,43 @@
     <script src="js/jquery.easing.min.js"></script>
     <script type="text/javascript">
         $(function(){
-            if($(window).width()  991){
-                console.log('cambio');
-                 console.log($(window).width());
+            if($(window).width() <= 991){
+                $('#clients').html('').html('<div id="sub-client">\n\
+                                             <div class="row" id="clientes1">\n\
+                                                <div id="indice-clientes" class="col-md-4" style="padding-top:0;padding-bottom: 32%;">\n\
+                                                     <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" ">\n\
+                                                    <img class="img-responsive" src="img/CONADIC.png" style="    width: 300px;height: 100px;margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding: 12%;">\n\
+                                                     <img class="img-responsive" src="img/JALISCOgob.png" stle="width: 300px;    height: 269px;    margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top:0">\n\
+                                                     <img class="img-responsive" src="img/CONAGO.png" style="width: 300px;    height: 279px;    margin: auto;" />\n\
+                                                </div> \n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 12%;">\n\
+                                                     <img class="img-responsive" src="img/UANLazul.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>     \n\
+                                            </div>\n\
+                                            <div class="row" id="clientes2">\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/UNIVA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/AEROMEXICO.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/SAMBORNS.png" style="    width: 301px;    height: 123px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/PLACENCIA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;padding-bottom: 17%;">\n\
+                                                    <img class="img-responsive" src="img/SUPERcolchones.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div> \n\
+                                            </div>\n\
+                                        </div>');
             }
            
         });
