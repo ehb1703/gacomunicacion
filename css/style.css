@@ -295,7 +295,7 @@ footer a, footer a:hover {
   /* Nombre de la Empresa */
   
 }
-
+/*Pantalla SM*/
 @media screen and (max-width: 4010px ){
 
   .contact-info p{
@@ -429,6 +429,20 @@ footer a, footer a:hover {
     width: 51%;
     margin: auto;
   }
+  .txt-map{
+    font-size: 11px;
+    color: #a6a6a7;
+    font-weight: 100;
+  }
+  .txt2-map{
+    font-size: 14px;
+    color: #104b5c;
+  }
+  #list-div{
+    top: 0px;
+    position: absolute;
+    right: 18px;
+  }
 }
 /*Pantalla Gde*/
 @media screen and (min-width: 990px) {
@@ -440,10 +454,10 @@ footer a, footer a:hover {
     margin: auto;
   }
     #intro-div{
-      border-left: 0px;
-      border-right: 0px;
-      border-top: 2px solid rgba(0, 0, 0, 0.18);
-      border-bottom: 2px solid rgba(0, 0, 0, 0.18);
+      border-left: 2px solid rgba(0, 0, 0, 0.18);
+      border-right: 2px solid rgba(0, 0, 0, 0.18);
+      border-bottom: none;
+      border-top: none;
     }
     #cobertura-list{
       display: none;
@@ -514,6 +528,20 @@ footer a, footer a:hover {
     padding-top: 3%;
     padding-bottom: 3%;
   }
+ .txt-map{
+    font-size: 18px;
+    color: #a6a6a7;
+    font-weight: 100;
+  }
+  .txt2-map{
+    font-size: 20px;
+    color: #104b5c;
+  }
+  #list-div{
+    top: 0px;
+    position: absolute;
+    right: 0px;
+  }
 
 }
 /*.brand-img{
@@ -554,15 +582,6 @@ footer a, footer a:hover {
   text-align: center;
 }
 
-#intro-div{
-  color: #002E3C;
-  font-size: 18;
-  background-color: #ffffff;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
-  border-left: 2px solid rgba(0, 0, 0, 0.18);
-  border-right: 2px solid rgba(0, 0, 0, 0.18);
-}
 #text-divs div{
   padding: 2%;
 }
@@ -626,6 +645,10 @@ footer a, footer a:hover {
 #info{
   font-size: 18;
 }
-
-
-
+#map-col{
+  position: relative;
+}
+.verticalLine {
+    border-left: thick solid #104b5c;
+    padding-left: 5px;
+}

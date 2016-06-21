@@ -45,6 +45,7 @@
                     <li><a href="#services">Servicios</a></li>
                     <li><a href="#clients">Clientes</a></li>
                     <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sistema</a></li>
                 </ul>
             </div>
         </div>
@@ -62,18 +63,18 @@
                  <div class="row" id="text">
                     <div class="col-md-offset-3 col-md-6 col-md-offset-3 text-center" id="title-text">
                         <span>GA Comunicación</span><br>
-                        <span> es pionera en el monitoreo de radio y televisión,<br> con más de 24 años de experiencia</span>
+                        <span> es pionera en el monitoreo de radio y televisión<br> con 30 años de experiencia</span>
                     </div>
                 </div>
                 <div class="row" id="text-divs"> 
                     <div class="col-md-4">
-                        <h4>MISIÓN</h4>
+                        <h4>INTRODUCCIÓN</h4>
                         <p>
-                            <strong>Informar</strong> real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.
+                            <strong>Proyectar</strong> a GA Comunicación como empresa líder, competitiva y rentable en el monitoreo y análisis de la información mediática; enfrentamos los retos de manera innovadora, aprovechando con actitud, la experiencia y fortaleza de cada uno de nuestros colaboradores, para generar una respuesta eficaz con información estratégica, oportuna y de calidad.
                         </p>
                     </div>
                      <div class="col-md-4" id="intro-div">
-                        <h4>INTRODUCCIÓN</h4>
+                        <h4>MISIÓN</h4>
                         <p>
                             <strong>Desde</strong> el año 2002 marcamos la pauta a seguir en el campo del monitoreo, permitiendo al cliente el acceso a videos y audios de las notas comunicadas a los cinco minutos de su transmisión; de esta manera cumplimos los dos conceptos fundamentales de la comunicación: oportunidad y veracidad.
 
@@ -82,7 +83,7 @@
                      <div class="col-md-4">
                         <h4>VISIÓN</h4>
                         <p>
-                            <strong>Proyectar</strong> a GA Comunicación como empresa líder,  con liderazgo, competitiva y rentable en el monitoreo y análisis de la información mediática; enfrentamos los retos de manera innovadora, aprovechando con actitud, la experiencia y fortaleza de cada uno de nuestros colaboradores, para generar una respuesta eficaz con información estratégica, oportuna y de calidad.
+                            <strong>Informar</strong> real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.
                         </p>
                     </div>
                 </div>
@@ -99,8 +100,18 @@
             </div>
         </div>
         <div class="row" id="mapa">
-            <div class="col-md-5 col-md-offset-2 col-sm-12" >
-                <img class="img-responsive" src="img/MAPAgaCOBERTURA.png"/>
+            <div class="col-md-5 col-md-offset-2 col-sm-12" id="map-col">
+                <div id="list-div">
+                    <div class="verticalLine">
+                        <span class="txt-map textAv">20 ciudades</span><br>
+                        <span class="txt-map textAv" >340 estaciones de radio</span><br>
+                        <span class="txt-map textAv">72 canales de tv abierta</span><br>
+                        <span class="txt-map textAv">45 canales de cable</span><br>
+                        <span class="txt2-map textAv">461 emisoras en total</span>
+                        </div>
+                    
+                </div>
+                <img class="img-responsive" src="img/MAPAgaCOBERTURA1.png"/>
             </div>
             <div class="col-md-5" id="cobertura-list">
                <ul class="list-group">
@@ -216,11 +227,11 @@
                 <div id="formContainer">
                   <form class="form-signin" id="login" role="form">
                   <p>Acceso a Clientes</p>
-                    <select class="form-control">
+                    <!--<select class="form-control">
                         <option>Seleccione su Sistema</option>
                         <option>Sistema de Noticias</option>
                         <option>Sistema de Spots</option>
-                    </select>
+                    </select>-->
                     <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
                     <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
                     <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
@@ -239,7 +250,7 @@
                 <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>
                 <p class="info-address"><strong>Telefonos :</strong> <a href="tel:555373 3225">(55) 5373 3225</a> y 
                 <a href="tel:5553739889">(55) 5373 9889</a></p>
-                <p class="info-address"><strong>Correo :</strong> <a href="mailto:jlga@gacomunicacion.com">jlga@gacomunicacion.com</a></p>
+                <p class="info-address"><strong>Correo :</strong> <a href="mailto:jlga@gacomunicacion.com">ejemplo@gacomunicacion.com</a></p>
             </div>
              <div class="col-md-3" style="padding-top: 6%;">
                     <img src="img/GAlogoSINfondo.png" id="logo">
@@ -248,9 +259,37 @@
             </div>
         </div>
     </section>
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Acceso a Clientes</h4>
+          </div>
+          <div class="modal-body">
+                <div id="formContainer">
+                  <form class="form-signin" id="login" role="form">
+                    <!--<select class="form-control">
+                        <option>Seleccione su Sistema</option>
+                        <option>Sistema de Noticias</option>
+                        <option>Sistema de Spots</option>
+                    </select>-->
+                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
+                    <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
+                    <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+                  </form>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!-- REQUIRED SCRIPTS FILES -->
     <!-- CORE JQUERY FILE -->
     <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/custom.js"></script>
     <!-- REQUIRED BOOTSTRAP SCRIPTS -->
     <script src="js/bootstrap.js"></script>
     <!-- BACKGROUND VIDEO PLUGIN  -->
@@ -258,8 +297,8 @@
     <!-- SCROLLING SCRIPTS PLUGIN  -->
     <script src="js/jquery.easing.min.js"></script>
     <script type="text/javascript">
-        $(function(){
-            if($(window).width() <= 991){
+            $(window).resize(function(){
+                if($(window).width() <= 991){
                 $('#clients').html('').html('<div id="sub-client">\n\
                                              <div class="row" id="clientes1">\n\
                                                 <div id="indice-clientes" class="col-md-4" style="padding-top:0;padding-bottom: 32%;">\n\
@@ -296,8 +335,44 @@
                                                 </div> \n\
                                             </div>\n\
                                         </div>');
+            }else{
+                $('#clients').html('').html('<div id="sub-client">\n\
+                                             <div class="row" id="clientes1">\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                    <img class="img-responsive" src="img/CONADIC.png"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6">\n\
+                                                     <img class="img-responsive" src="img/JALISCOgob.png"/>\n\
+                                                </div>  \n\
+                                                <div id="indice-clientes" class="col-md-4" style="padding-top:0;">\n\
+                                                     <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-2 col-sm-6">\n\
+                                                     <img class="img-responsive" src="img/CONAGO.png"/>\n\
+                                                </div> \n\
+                                                <div class="col-md-2 col-sm-6">\n\
+                                                     <img class="img-responsive" src="img/UANLazul.png"/>\n\
+                                                </div>     \n\
+                                            </div>\n\
+                                            <div class="row" id="clientes2">\n\
+                                                <div class="col-md-2 col-sm-6">\n\
+                                                    <img class="img-responsive" src="img/UNIVA.png"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6">\n\
+                                                    <img class="img-responsive" src="img/AEROMEXICO.png"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                                                    <img class="img-responsive" src="img/SAMBORNS.png"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                                                    <img class="img-responsive" src="img/PLACENCIA.png"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-2 col-sm-6">\n\
+                                                    <img class="img-responsive" src="img/SUPERcolchones.png"/>\n\
+                                                </div> \n\
+                                            </div>\n\
+                                        </div>');
             }
-           
         });
     </script>
 </body>

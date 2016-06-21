@@ -18,9 +18,12 @@ $(document).ready(function () {
     // Script de Scroll 
         $('.scroll-me a').bind('click', function (event) {
         var $anchor = $(this);
+        var x= $($anchor.attr('href')).offset();
+        var _top = x.top-50;
         $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
+            scrollTop: _top
         }, 1000, 'easeInOutQuad');
+
         event.preventDefault();
         });
 
