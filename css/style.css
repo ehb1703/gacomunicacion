@@ -587,7 +587,7 @@ footer a, footer a:hover {
 }
 
 #cobertura-div{
-  background-color:#b6c9d0; 
+  background-color:#ffffff; 
   color: #03384a;
 }
 #cobertura-div span{
@@ -599,6 +599,10 @@ footer a, footer a:hover {
   width: 80%;
   margin: auto;
   padding-top: 3%;
+}
+#services-row {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 #cobertura-list ul li{
   color:#529095;
@@ -651,4 +655,21 @@ footer a, footer a:hover {
 .verticalLine {
     border-left: thick solid #104b5c;
     padding-left: 5px;
+}
+.header-cobertura{
+  height: 70px;
+  margin: auto;
+}
+#contact{
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
+#row-contact{
+  padding-top: 5%;
+}
+#services{
+  padding-top: 5%;
+}
+#cliente{
+  padding-top: 5%;
 }

@@ -43,7 +43,7 @@
                     <li><a href="#home">Inicio</a></li>
                     <li><a href="#coverup">Cobertura</a></li>
                     <li><a href="#services">Servicios</a></li>
-                    <li><a href="#clients">Clientes</a></li>
+                    <li><a href="#cliente">Clientes</a></li>
                     <li><a href="#contact">Contacto</a></li>
                     <li><a href="#" data-toggle="modal" data-target="#myModal">Sistema</a></li>
                 </ul>
@@ -95,8 +95,11 @@
     <!-- COVER UP SECTIOS -->
     <div id="coverup">
         <div class="row">
-            <div class="col-md-6" id="cobertura-div">
-                <span class="textAv">COBERTURA</span>
+            <div class="col-md-12" id="cobertura-div-plec">
+               <img src="img/PLECAcobertura.png"  style="width:100%;height:4px;"/>
+            </div>
+            <div class="col-md-12" id="cobertura-div">
+               <img src="img/HEADERcobertura.png" class="img-responsive header-cobertura" id="header-cobertura" >
             </div>
         </div>
         <div class="row" id="mapa">
@@ -161,7 +164,15 @@
 
     <!--PARALLAX LIKE / STATS SECTION END -->
 
-    <section id="services">
+    <div id="services">
+            <div class="row">
+                <div class="col-md-12" id="cobertura-div">
+                   <img src="img/PLECAservicios.png"  style="width:100%;height:4px;"/>
+                </div>
+                <div class="col-md-12">
+                   <img src="img/HEADERservicios.png" class="img-responsive header-cobertura" id="header-services" >
+                </div>
+            </div>
             <div class="row" id="services-row">
                 <div class="col-md-3 col-sm-6">
                     <img class="img-responsive" src="img/electronicos.png" >
@@ -177,44 +188,46 @@
                 </div>
 
             </div>
-    </section>
+    </div>
 
     <!-- CLIENT SECTION -->
-    <div id="clients">
-        <div id="sub-client">
-             <div class="row" id="clientes1">
-                <div class="col-md-2 col-sm-6" >
-                    <img class="img-responsive" src="img/CONADIC.png"/>
+    <div id="cliente"> 
+        <div id="clients">
+            <div id="sub-client">
+                 <div class="row" id="clientes1">
+                    <div class="col-md-2 col-sm-6" >
+                        <img class="img-responsive" src="img/CONADIC.png"/>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                         <img class="img-responsive" src="img/JALISCOgob.png"/>
+                    </div>  
+                    <div id="indice-clientes" class="col-md-4" style="padding-top:0;">
+                         <img class="img-responsive" src="img/CLIENTES 2.png"/>
+                    </div>  
+                    <div class="col-md-2 col-sm-6">
+                         <img class="img-responsive" src="img/CONAGO.png"/>
+                    </div> 
+                    <div class="col-md-2 col-sm-6">
+                         <img class="img-responsive" src="img/UANLazul.png"/>
+                    </div>     
                 </div>
-                <div class="col-md-2 col-sm-6">
-                     <img class="img-responsive" src="img/JALISCOgob.png"/>
-                </div>  
-                <div id="indice-clientes" class="col-md-4" style="padding-top:0;">
-                     <img class="img-responsive" src="img/CLIENTES 2.png"/>
-                </div>  
-                <div class="col-md-2 col-sm-6">
-                     <img class="img-responsive" src="img/CONAGO.png"/>
-                </div> 
-                <div class="col-md-2 col-sm-6">
-                     <img class="img-responsive" src="img/UANLazul.png"/>
-                </div>     
-            </div>
-            <div class="row" id="clientes2">
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" src="img/UNIVA.png"/>
+                <div class="row" id="clientes2">
+                    <div class="col-md-2 col-sm-6">
+                        <img class="img-responsive" src="img/UNIVA.png"/>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <img class="img-responsive" src="img/AEROMEXICO.png"/>
+                    </div>  
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">
+                        <img class="img-responsive" src="img/SAMBORNS.png"/>
+                    </div>  
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">
+                        <img class="img-responsive" src="img/PLACENCIA.png"/>
+                    </div>  
+                    <div class="col-md-2 col-sm-6">
+                        <img class="img-responsive" src="img/SUPERcolchones.png"/>
+                    </div> 
                 </div>
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" src="img/AEROMEXICO.png"/>
-                </div>  
-                <div class="col-md-offset-1 col-md-2 col-sm-6">
-                    <img class="img-responsive" src="img/SAMBORNS.png"/>
-                </div>  
-                <div class="col-md-offset-1 col-md-2 col-sm-6">
-                    <img class="img-responsive" src="img/PLACENCIA.png"/>
-                </div>  
-                <div class="col-md-2 col-sm-6">
-                    <img class="img-responsive" src="img/SUPERcolchones.png"/>
-                </div> 
             </div>
         </div>
     </div>
@@ -223,6 +236,14 @@
     <!-- CONTACT SECTION -->
     <section id="contact">
         <div class="row">
+            <div class="col-md-12" id="cobertura-div">
+               <img src="img/PLECAcontacto.png"  style="width:100%;height:4px;"/>
+            </div>
+            <div class="col-md-12">
+               <img src="img/HEADERcontacto.png" class="img-responsive header-cobertura" id="header-services" >
+            </div>
+        </div>
+        <div class="row" id="row-contact">
             <div class="col-md-4 ">
                 <div id="formContainer">
                   <form class="form-signin" id="login" role="form">
