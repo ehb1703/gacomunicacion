@@ -550,6 +550,25 @@ footer a, footer a:hover {
 #home{
   padding-top: .7%;
 }
+#home-li > a{
+  background-color: #104b5c;
+}
+#coverup-li > a{
+  background-color: #336b7e;
+}
+#services-li > a{
+  background-color: #418092;
+}
+#clientes-li > a{
+  background-color: #458fa5;
+}
+#contact-li > a{
+  background-color: #4e9eb5;
+}
+#sistema-li > a{
+  background-color: #307386;
+}
+
 #home-row {
   background-image: url('../img/FONDOencabezado.png');
   background-repeat: no-repeat;
@@ -584,6 +603,7 @@ footer a, footer a:hover {
 
 #text-divs div{
   padding: 2%;
+  border-left: 1px solid #104b5c;
 }
 
 #cobertura-div{
