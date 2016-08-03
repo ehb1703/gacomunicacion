@@ -326,8 +326,8 @@ footer a, footer a:hover {
     #intro-div{
       border-left: 0px;
       border-right: 0px;
-      border-top: 2px solid rgba(0, 0, 0, 0.18);
-      border-bottom: 2px solid rgba(0, 0, 0, 0.18);
+      border-top: 1px solid #104b5c;
+      border-bottom: 1px solid #104b5c;
     }
     #cobertura-list{
       display: none;
@@ -454,8 +454,8 @@ footer a, footer a:hover {
     margin: auto;
   }
     #intro-div{
-      border-left: 2px solid rgba(0, 0, 0, 0.18);
-      border-right: 2px solid rgba(0, 0, 0, 0.18);
+      border-left: 1px solid #104b5c;
+      border-right: 1px solid #104b5c;
       border-bottom: none;
       border-top: none;
     }
@@ -603,7 +603,7 @@ footer a, footer a:hover {
 
 #text-divs div{
   padding: 2%;
-  border-left: 1px solid #104b5c;
+/*  border-left: 1px solid #104b5c;*/
 }
 
 #cobertura-div{
