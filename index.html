@@ -21,6 +21,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico">
 	
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -41,11 +42,11 @@
             <div class="navbar-collapse collapse navbar-right scroll-me">
                 <ul class="nav navbar-nav ">
                     <li id="home-li"    ><a href="#home">INICIO</a></li>
-                    <li id="coverup-li" ><a href="#coverup">COBERTURA</a></li>
+                    <!--<li id="coverup-li" ><a href="#coverup">COBERTURA</a></li>-->
                     <li id="services-li"><a href="#services">SERVICIOS</a></li>
                     <li id="clientes-li"><a href="#cliente">CLIENTES</a></li>
                     <li id="contact-li" ><a href="#contact">CONTACTO</a></li>
-                    <li id="sistema-li" ><a href="#" data-toggle="modal" data-target="#myModal">SISTEMA</a></li>
+                    <!--<li id="sistema-li" ><a href="#" data-toggle="modal" data-target="#myModal">SISTEMA</a></li>-->
                 </ul>
             </div>
         </div>
@@ -56,8 +57,38 @@
         <div class="row" id="home-row">
             <div id="sub-home">
                 <div class="row" id="logo-row">
-                    <div id="logo-col" class="col-md-offset-4 col-md-4 col-md-offset-4 ">
+                    <div id="logo-col" class="col-md-offset-4 col-md-4">
                         <img id="logo-img" class="img-responsive centered" src="img/LOGOwebHEADER.png">
+                    </div>
+                    <div class="col-md-3">
+                        <div id="modal-login" class="modal-dialog modal-sm" role="document" style="display:none">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                              </button>
+                              <h4 class="modal-title">Acceso a clientes.</h4>
+                            </div>
+                            <div class="modal-body">
+                              <div id="formContainer">
+                                  <form class="form-signin" id="login" role="form">
+                                    <!--<select class="form-control">
+                                        <option>Seleccione su Sistema</option>
+                                        <option>Sistema de Noticias</option>
+                                        <option>Sistema de Spots</option>
+                                    </select>-->
+                                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
+                                    <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
+                                    <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+                                  </form>
+                                </div>
+                            </div>
+                            <!--<div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div> /.modal-content -->
+                        </div>
                     </div>
                 </div>
                  <div class="row" id="text">
@@ -80,7 +111,7 @@
 
                         </p>
                     </div>-->
-                     <div class="col-md-6">
+                     <div class="col-md-6" id="intro-div-2">
                         <h4>MISIÓN</h4>
                         <p>
                             <strong>Informar</strong> real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.
@@ -92,8 +123,38 @@
     </div>
     <!--HOME SECTION END  -->
     
+    
+
+    <!--PARALLAX LIKE / STATS SECTION END -->
+
+    <div id="services">
+            <div class="row">
+                <div class="col-md-12" id="cobertura-div">
+                   <img src="img/PLECAservicios.png"  style="width:100%;height:4px;"/>
+                </div>
+                <div class="col-md-12">
+                   <img src="img/HEADERservicios.png" class="img-responsive header-cobertura" id="header-services" >
+                </div>
+            </div>
+            <div class="row" id="services-row">
+                <div class="col-md-3 col-sm-6 div-img">
+                    <img class="img-responsive img" src="img/electronicos.png" >
+                </div>
+                <div class="col-md-3 col-sm-6 div-img">
+                    <img class="img-responsive img" src="img/impresos.png">
+                </div>
+                <div class="col-md-3 col-sm-6 div-img">
+                    <a id="coverup-li" href="#coverup"><img class="img-responsive img" src="img/comercial.png" ></a>
+                </div>
+                <div class="col-md-3 col-sm-6 div-img">
+                    <img class="img-responsive img" src="img/redesociales.png">
+                </div>
+
+            </div>
+    </div>
+
     <!-- COVER UP SECTIOS -->
-    <div id="coverup">
+    <div id="coverup" >
         <div class="row">
             <div class="col-md-12" id="cobertura-div-plec">
                <img src="img/PLECAcobertura.png"  style="width:100%;height:4px;"/>
@@ -143,7 +204,7 @@
     </div>
     <!-- EOF COVER UP SECTION -->
 
-    <!-- CLIENT SECTION -->
+    <!-- CLIENT SECTION
     <div id="message">
         <div id="fondo-div">
             <div id="sub-fondo-div">
@@ -160,35 +221,7 @@
             </div>
         </div>
     </div>
-    <!-- EOF CLIENT SECTION -->
-
-    <!--PARALLAX LIKE / STATS SECTION END -->
-
-    <div id="services">
-            <div class="row">
-                <div class="col-md-12" id="cobertura-div">
-                   <img src="img/PLECAservicios.png"  style="width:100%;height:4px;"/>
-                </div>
-                <div class="col-md-12">
-                   <img src="img/HEADERservicios.png" class="img-responsive header-cobertura" id="header-services" >
-                </div>
-            </div>
-            <div class="row" id="services-row">
-                <div class="col-md-3 col-sm-6">
-                    <img class="img-responsive" src="img/electronicos.png" >
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <img class="img-responsive" src="img/impresos.png">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <img class="img-responsive" src="img/comercial.png">
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <img class="img-responsive" src="img/redesociales.png">
-                </div>
-
-            </div>
-    </div>
+         EOF CLIENT SECTION -->
 
     <!-- CLIENT SECTION -->
     <div id="cliente"> 
@@ -244,21 +277,21 @@
             </div>
         </div>
         <div class="row" id="row-contact">
-            <div class="col-md-4 ">
+            <!--<div class="col-md-4 ">
                 <div id="formContainer">
                   <form class="form-signin" id="login" role="form">
-                  <p>Acceso a Clientes</p>
+                  <p>Acceso a Clientes</p> -->
                     <!--<select class="form-control">
                         <option>Seleccione su Sistema</option>
                         <option>Sistema de Noticias</option>
                         <option>Sistema de Spots</option>
                     </select>-->
-                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
+                    <!--<input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
                     <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
                     <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
                   </form>
                 </div>
-            </div>
+            </div>-->
             <div class="col-md-8">
             <div class="row" id="text-area">
                 <div class="col-md-9" id="presentacion">
@@ -280,6 +313,9 @@
             </div>
         </div>
     </section>
+
+
+
     <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -307,9 +343,41 @@
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
+
+
+
+    <div id="myModal2" class="modal fade-modal-lg" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"></h4>
+          </div>
+          <div class="modal-body2">
+                <div id="formContainer">
+                  <form class="form-signin" id="login" role="form">
+                    <!--<select class="form-control">
+                        <option>Seleccione su Sistema</option>
+                        <option>Sistema de Noticias</option>
+                        <option>Sistema de Spots</option>
+                    </select>-->
+                    <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
+                    <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
+                    <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+                  </form>
+                </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
     <!-- REQUIRED SCRIPTS FILES -->
     <!-- CORE JQUERY FILE -->
-    <script src="js/jquery-1.11.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <!--<script src="js/jquery-1.11.1.js"></script>-->
     <script src="js/custom.js"></script>
     <!-- REQUIRED BOOTSTRAP SCRIPTS -->
     <script src="js/bootstrap.js"></script>
@@ -318,6 +386,11 @@
     <!-- SCROLLING SCRIPTS PLUGIN  -->
     <script src="js/jquery.easing.min.js"></script>
     <script type="text/javascript">
+    function monitoreoCampana(){
+
+        $('.modal-body2').html('').append($('#coverup').css('display','block'));
+        $('#myModal2').modal('show');        
+    }
             $(window).resize(function(){
                 if($(window).width() <= 991){
                 $('#clients').html('').html('<div id="sub-client">\n\

@@ -15,6 +15,8 @@
 ========================================================  */
 
 $(document).ready(function () {
+        $( "#modal-login" ).show( 'slide', {}, 10000 );
+        
     // Script de Scroll 
         $('.scroll-me a').bind('click', function (event) {
         var $anchor = $(this);
@@ -72,3 +74,5 @@ $(document).ready(function () {
         return false;
     }
 });
+
+
