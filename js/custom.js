@@ -208,6 +208,47 @@ var medios ={
                                             <li class="list-group-item list-group-item-info">Capital Puebla</li> \n\
                                         </ul>');
             break;
+             case '30':
+                 $('.modal-title2').html('Medios de Veracruz');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Córdoba</li>\n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Orizaba</li> \n\
+                                            <li class="list-group-item list-group-item-info">Imagen</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Xalapa</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Xalapa</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Opinión de Poza Rica</li> \n\
+                                            <li class="list-group-item list-group-item-info">Imagen de Veracruz</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario del Istmo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Dictamen de Veracruz</li> \n\
+                                            <li class="list-group-item list-group-item-info">Notiver</li> \n\
+                                            <li class="list-group-item list-group-item-info">Crónica de Xalapa</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Acayucan</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Poza Rica</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Herededo de Coatzacoalcos</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Diario Martinense</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Tuxpan</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Heraldo de Coatzacoalcos</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Tantoyuca</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario Los Tuxtlas</li> \n\
+                                            <li class="list-group-item list-group-item-info">Noreste de Poza Rica</li> \n\
+                                        </ul>');
+            break;
+            case '31':
+                 $('.modal-title2').html('Medios de Mérida');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">Punto Medio</li>\n\
+                                            <li class="list-group-item list-group-item-info">La Verdad de Yucatán</li> \n\
+                                            <li class="list-group-item list-group-item-info">Milenio Novedades</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Diario de Yucatán</li> \n\
+                                            <li class="list-group-item list-group-item-info">De Peso Mérida</li> \n\
+                                            <li class="list-group-item list-group-item-info">Por Esto Yucatán</li> \n\
+                                            <li class="list-group-item list-group-item-info">Síntesis de Mérida</li> \n\
+                                            <li class="list-group-item list-group-item-info">La I de Yucatán</li> \n\
+                                            <li class="list-group-item list-group-item-info">Al Chile</li> \n\
+                                            <li class="list-group-item list-group-item-info">Sipse</li> \n\
+                                            <li class="list-group-item list-group-item-info">Artículo 7</li> \n\
+                                        </ul>');
+            break;
             default :
                 console.log('default');
             break;
