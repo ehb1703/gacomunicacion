@@ -613,6 +613,7 @@ footer a, footer a:hover {
   margin-right: 0px; 
   margin-left: 0px;
 }
+
 #logo-row{
   margin-top: 0px;
 }
@@ -643,11 +644,16 @@ footer a, footer a:hover {
   padding: 3%;
 }
 #services-row img{
-  width: 80%;
+  width: 60%;
   margin: auto;
   padding-top: 3%;
 }
-#services-row {
+#services-row2 img{
+  width: 60%;
+  margin: auto;
+  padding-top: 3%;
+}
+#services-row2 {
   padding-top: 10%;
   padding-bottom: 10%;
 }
@@ -715,7 +721,7 @@ footer a, footer a:hover {
   padding-top: 5%;
 }
 #services{
-  padding-top: 5%;
+  padding-top: 2%;
 }
 #cliente{
   padding-top: 5%;
