@@ -367,6 +367,65 @@ var medios ={
                                             <li class="list-group-item list-group-item-info">La Razón de San Luis</li> \n\
                                         </ul>');
             break;
+             case '24':
+                 $('.modal-title2').html('Medios de San Luís Potosí');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">Pulso San Luis Potosi</li>\n\
+                                            <li class="list-group-item list-group-item-info">San Luis Hoy</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de San Luis</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Jornada San Luis</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Prensa del Centro</li> \n\
+                                            <li class="list-group-item list-group-item-info">Esto del Centro</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Razón de San Luis</li> \n\
+                                        </ul>');
+            break;
+            case '20':
+                 $('.modal-title2').html('Medios de Oaxaca');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">Noticias</li>\n\
+                                            <li class="list-group-item list-group-item-info">A Diario</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Imparcial de Oaxaca</li> \n\
+                                            <li class="list-group-item list-group-item-info">Noticias Cuenca</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol del Istmo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Tiempo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Despertar</li> \n\
+                                            <li class="list-group-item list-group-item-info">Capital Oaxaca</li> \n\
+                                            <li class="list-group-item list-group-item-info">NSS Oaxaca</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario Oaxaca</li> \n\
+                                        </ul>');
+            break;
+            case '8':
+                 $('.modal-title2').html('Medios de Chihuahua');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">El Diario de Juárez</li>\n\
+                                            <li class="list-group-item list-group-item-info">El Heraldo de Chihuahua</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Parral</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Mexicano</li> \n\
+                                            <li class="list-group-item list-group-item-info">Norte de Ciudad Juárez</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Pueblo</li> \n\
+                                            <li class="list-group-item list-group-item-info">EL Norte Digital</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Diario de Chihuahua</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Diario de Delicias</li> \n\
+                                        </ul>');
+            break;
+            case '23':
+                 $('.modal-title2').html('Medios de Cancún');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">La Verdad de Quintana Roo</li>\n\
+                                            <li class="list-group-item list-group-item-info">Quequi</li> \n\
+                                            <li class="list-group-item list-group-item-info">Últimas Noticias</li> \n\
+                                            <li class="list-group-item list-group-item-info">Novedades de Quintana Roo</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Periódico de Quintana Roo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Quintana Roo</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Quintanarroense</li> \n\
+                                            <li class="list-group-item list-group-item-info">Imagen de Quintana Roo</li> \n\
+                                            <li class="list-group-item list-group-item-info">De Peso Cancún</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Voz de Quintana Roo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Respuesta</li> \n\
+                                            <li class="list-group-item list-group-item-info">Por Esto! de Quintana Roo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Al Momento</li> \n\
+                                        </ul>');
+            break;
             default :
                 console.log('default');
             break;
