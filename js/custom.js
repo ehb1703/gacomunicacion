@@ -249,6 +249,124 @@ var medios ={
                                             <li class="list-group-item list-group-item-info">Artículo 7</li> \n\
                                         </ul>');
             break;
+             case '2':
+                 $('.modal-title2').html('Medios de Tijuana');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">El Mexicano de Tijuana</li>\n\
+                                            <li class="list-group-item list-group-item-info">La Frontera de Tijuana</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Tijuana</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Voz de la Frontera</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Vigia</li> \n\
+                                            <li class="list-group-item list-group-item-info">Monitor Ecónomico</li> \n\
+                                            <li class="list-group-item list-group-item-info">Esto de las Californias</li> \n\
+                                            <li class="list-group-item list-group-item-info">Ciudad Real Hoy</li> \n\
+                                        </ul>');
+            break;
+            case '27':
+                 $('.modal-title2').html('Medios de Tabasco');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">Novedades de Tabasco</li>\n\
+                                            <li class="list-group-item list-group-item-info">Milenio Villahermosa</li> \n\
+                                            <li class="list-group-item list-group-item-info">Tabasco Hoy</li> \n\
+                                            <li class="list-group-item list-group-item-info">Presente de Tabasco</li> \n\
+                                            <li class="list-group-item list-group-item-info">Rumbo Nuevo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Presencia Sureste</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario Olmeca</li> \n\
+                                            <li class="list-group-item list-group-item-info">Tabasco al Día</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol del Sureste</li> \n\
+                                            <li class="list-group-item list-group-item-info">Heraldo de Tabasco</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Tabasco</li> \n\
+                                        </ul>');
+            break;
+            case '16':
+                 $('.modal-title2').html('Medios de Morelia');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">La Voz de Michoacán</li>\n\
+                                            <li class="list-group-item list-group-item-info">Provincia de Michoacán</li> \n\
+                                            <li class="list-group-item list-group-item-info">Cambio de Michoacán</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Jornada Michoacán</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Morelia</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Zamora</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Michoacán</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Opinión de Michoacán</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Morelia</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Apatzingan</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Lazaro</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Morelia</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Uruapan</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Zihuatanejo</li> \n\
+                                            <li class="list-group-item list-group-item-info">ABC de Zamora</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Opinión de Uruapan</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Independiente</li> \n\
+                                            <li class="list-group-item list-group-item-info">Michoacán al Día</li> \n\
+                                            <li class="list-group-item list-group-item-info">Quadrantin</li> \n\
+                                        </ul>');
+            break;
+            case '12':
+                 $('.modal-title2').html('Medios de Acapulco');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Acapulco</li>\n\
+                                            <li class="list-group-item list-group-item-info">Vértice</li> \n\
+                                            <li class="list-group-item list-group-item-info">Novedades de Acapulco</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Chilpancingo</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario 21 de Iguala</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario Objetivo</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sur</li> \n\
+                                            <li class="list-group-item list-group-item-info">Redes del Sur</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Jornada Guerrero</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario 17</li> \n\
+                                            <li class="list-group-item list-group-item-info">Acontencer</li> \n\
+                                            <li class="list-group-item list-group-item-info">Despertar de la Costa</li> \n\
+                                            <li class="list-group-item list-group-item-info">Despertar del Sur</li> \n\
+                                            <li class="list-group-item list-group-item-info">Región Norte</li> \n\
+                                        </ul>');
+            break;
+            case '17':
+                 $('.modal-title2').html('Medios de Morelos');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">EL Sol de Cuautla</li>\n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Cuernavaca</li> \n\
+                                            <li class="list-group-item list-group-item-info">7 Días</li> \n\
+                                            <li class="list-group-item list-group-item-info">Diario de Morelos</li> \n\
+                                            <li class="list-group-item list-group-item-info">Capital Morelos</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Unión de Morelos</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Regional del Sur</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Jornada Morelos</li> \n\
+                                            <li class="list-group-item list-group-item-info">Miled Morelos</li> \n\
+                                        </ul>');
+            break;
+            case '11':
+                 $('.modal-title2').html('Medios de León');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">Correo de Guanajuato</li>\n\
+                                            <li class="list-group-item list-group-item-info">El Diario de Irapuato</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol del Bajío</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Irapuato</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de Salamanca</li> \n\
+                                            <li class="list-group-item list-group-item-info">EL Sol de León</li> \n\
+                                            <li class="list-group-item list-group-item-info">Noticias Vespertinas del Sol de León</li> \n\
+                                            <li class="list-group-item list-group-item-info">Milenio León</li> \n\
+                                            <li class="list-group-item list-group-item-info">Heraldo León</li> \n\
+                                            <li class="list-group-item list-group-item-info">AM de León</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Prensa Del Bajío</li> \n\
+                                            <li class="list-group-item list-group-item-info">Al Día</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Heraldo del Bajío</li> \n\
+                                            <li class="list-group-item list-group-item-info">AM de Guanajuato</li> \n\
+                                            <li class="list-group-item list-group-item-info">Publimetro León</li> \n\
+                                        </ul>');
+            break;
+            case '24':
+                 $('.modal-title2').html('Medios de San Luís Potosí');
+                $('.modal-body2').html('<ul class="list-group text-center">\n\
+                                            <li class="list-group-item list-group-item-info">Pulso San Luis Potosi</li>\n\
+                                            <li class="list-group-item list-group-item-info">San Luis Hoy</li> \n\
+                                            <li class="list-group-item list-group-item-info">El Sol de San Luis</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Jornada San Luis</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Prensa del Centro</li> \n\
+                                            <li class="list-group-item list-group-item-info">Esto del Centro</li> \n\
+                                            <li class="list-group-item list-group-item-info">La Razón de San Luis</li> \n\
+                                        </ul>');
+            break;
             default :
                 console.log('default');
             break;
