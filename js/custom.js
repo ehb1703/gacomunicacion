@@ -210,6 +210,9 @@ $(document).ready(function () {
  function tooltipHtml(n, d, e){ /* FUNCION PARA MOSTRAR EL NOMBRE DEL ESTADO EN EL MAPA :s */
                                     return "<h4>"+n+ " ("+e+") Emisoras</h4>";
                         }
+ function tooltipHtml_impresos(n, d, e, m){ /* FUNCION PARA MOSTRAR EL NOMBRE DEL ESTADO EN EL MAPA :s */
+            return "<h4>"+n+ " ("+m+") Medios</h4>";
+}
 
 var map='';
 console.log(screen.width);
@@ -259,7 +262,7 @@ var sampleData ={};
                 high=Math.round(100*Math.random());
 
                 sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]),
-                    avg:Math.round((low+mid+high)/3), alter_color:d3.interpolate("#FE0000", "#FE0000")(low/100) , color:d3.interpolate("#848484", "#848484")(low/100)};
+                    avg:Math.round((low+mid+high)/3), alter_color:d3.interpolate("#002B32", "#002B32")(low/100) , color:d3.interpolate("#D1D2D4", "#D1D2D4")(low/100)};
             });
 
 var medios ={
@@ -656,7 +659,7 @@ var medios ={
                                      Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
                                     </li>\n\
                                     <p><strong>COBERTURA.</strong> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
-                                    ');
+                                    '+map);
         $('#footer').html('');
         $('#myModal2').modal('show');
     },
@@ -692,7 +695,7 @@ var medios ={
                                     '+map);
         $('#footer').html('');
         $('#myModal2').modal('show');
-         uStates.draw("#statesvg", sampleData, tooltipHtml);
+         uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
     },
     campanas:function(){
 
