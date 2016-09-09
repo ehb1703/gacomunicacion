@@ -221,7 +221,7 @@ console.log(screen.width);
             <div class="box box-solid">\n\
                 <div id="map">\n\
                     <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
-                    <svg width="100%" height="450" id="statesvg"></svg> <!-- area de dibujo -->\n\
+                    <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
                 </div>\n\
             </div>\n\
         </section>';
@@ -659,9 +659,10 @@ var medios ={
                                      Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
                                     </li>\n\
                                     <p><strong>COBERTURA.</strong> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
-                                    '+map);
+                                    <center>'+map+'</center>' );
         $('#footer').html('');
         $('#myModal2').modal('show');
+         uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
     },
     impresos:function(){
         $('#title').html('').append('Monitoreo de Noticias Medios Impresos');
@@ -752,7 +753,7 @@ var medios ={
                                      Seguimiento personalizado las 24 horas del día por cuenta monitoreada\n\
                                     </li>\n\
                                     <li>\n\
-                                     REvaluación de tweets, indicando número de tweets, alcance e impactos generados.\n\
+                                     Evaluación de tweets, indicando número de tweets, alcance e impactos generados.\n\
                                     </li>\n\
                                     <li>\n\
                                      Estructura y contenidos diseñados a las necesidades del cliente.\n\
