@@ -214,43 +214,7 @@ $(document).ready(function () {
             return "<h4>"+n+ " ("+m+") Medios</h4>";
 }
 
-var map='';
-console.log(screen.width);
- if(screen.width > 990){
-     map += '<section class="content map-iframe" >\n\
-            <div class="box box-solid">\n\
-                <div id="map">\n\
-                    <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
-                    <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
-                </div>\n\
-            </div>\n\
-        </section>';
 
- }else{
-     map += '<div class="col-md-12" id="cobertura-list">\n\
-               <ul class="list-group">\n\
-                  <li id="9" class="list-group-item">67 CDMX</li>\n\
-                  <li id="15" class="list-group-item">10 Toluca</li>\n\
-                  <li id="19" class="list-group-item">40 Monterrey</li>\n\
-                  <li id="14" class="list-group-item">49 Guadalajara</li>\n\
-                  <li id="13" class="list-group-item">10 Pachuca</li>\n\
-                  <li id="22" class="list-group-item">18 Querétaro</li>\n\
-                  <li id="21" class="list-group-item">11 Puebla</li>\n\
-                  <li id="30" class="list-group-item">17 Veracruz</li>\n\
-                  <li id="31" class="list-group-item">15 Mérida</li>\n\
-                  <li id="2" class="list-group-item">18 Tijuana</li>\n\
-                  <li id="27" class="list-group-item">21 Villahermosa</li>\n\
-                  <li id="12" class="list-group-item">16 Morelia</li>\n\
-                  <li id="16" class="list-group-item">16 Acapulco</li>\n\
-                  <li id="17" class="list-group-item">18 Cuernavaca</li>\n\
-                  <li id="11" class="list-group-item">18 León</li>\n\
-                  <li id="24" class="list-group-item">20 San Luis Potosí</li>\n\
-                  <li id="20" class="list-group-item">14 Oaxaca</li>\n\
-                  <li id="8" class="list-group-item">11 Chihuahua</li>\n\
-                  <li id="23" class="list-group-item">10 Cancún</li>\n\
-                </ul> \n\
-            </div>';
- }
 
 
 var sampleData ={};
@@ -659,12 +623,61 @@ var medios ={
                                      Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
                                     </li>\n\
                                     <p><strong>COBERTURA.</strong> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
-                                    <center>'+map+'</center>' );
+                                    ' );
         $('#footer').html('');
         $('#myModal2').modal('show');
-         uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
+       //  uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
     },
     impresos:function(){
+        var map='';
+ if(screen.width > 990){
+     map += '<section class="content map-iframe" >\n\
+            <div class="box box-solid">\n\
+                <div id="map">\n\
+                    <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
+                    <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
+                </div>\n\
+            </div>\n\
+        </section>';
+
+ }else{
+     map += '<div class="col-md-12" id="cobertura-list">\n\
+               <ul class="list-group">\n\
+                  <li id="9" class="list-group-item">30 CDMX</li>\n\
+                  <li id="15" class="list-group-item">2 &nbsp&nbspAguascalientes</li>\n\
+                  <li id="19" class="list-group-item">7 &nbsp&nbspBaja California</li>\n\
+                  <li id="14" class="list-group-item">2 &nbsp&nbspBaja California Sur</li>\n\
+                  <li id="13" class="list-group-item">2 &nbsp&nbspCampeche</li>\n\
+                  <li id="22" class="list-group-item">17 Chiapas</li>\n\
+                  <li id="21" class="list-group-item">6  &nbsp&nbspChihuahua</li>\n\
+                  <li id="30" class="list-group-item">7  &nbsp&nbspCoahuila</li>\n\
+                  <li id="31" class="list-group-item">6  &nbsp&nbspColima</li>\n\
+                  <li id="2" class="list-group-item">5  &nbsp&nbspDurango</li>\n\
+                  <li id="27" class="list-group-item">16 Edomex</li>\n\
+                  <li id="12" class="list-group-item">15 Guanajuato</li>\n\
+                  <li id="16" class="list-group-item">12 Guerrero</li>\n\
+                  <li id="17" class="list-group-item">7  &nbsp&nbspHidalgo</li>\n\
+                  <li id="11" class="list-group-item">16 Jalisco</li>\n\
+                  <li id="24" class="list-group-item">4  &nbsp&nbspMichoacán</li>\n\
+                  <li id="20" class="list-group-item">4  &nbsp&nbspMorelos</li>\n\
+                  <li id="8" class="list-group-item">5  &nbsp&nbspNayarit</li>\n\
+                  <li id="23" class="list-group-item">9  &nbsp&nbspNuevo León</li>\n\
+                  <li id="23" class="list-group-item">8  &nbsp&nbspOaxaca</li>\n\
+                  <li id="23" class="list-group-item">7  &nbsp&nbspPuebla</li>\n\
+                  <li id="23" class="list-group-item">7  &nbsp&nbspQuerétaro</li>\n\
+                  <li id="23" class="list-group-item">14 Quintana Roo</li>\n\
+                  <li id="23" class="list-group-item">8  &nbsp&nbspSan Luis Potosí</li>\n\
+                  <li id="23" class="list-group-item">14 Sinaloa</li>\n\
+                  <li id="23" class="list-group-item">15 Sonora</li>\n\
+                  <li id="23" class="list-group-item">5  &nbsp&nbspTabasco</li>\n\
+                  <li id="23" class="list-group-item">16 Tamaulipas</li>\n\
+                  <li id="23" class="list-group-item">2  &nbsp&nbspTlaxcala</li>\n\
+                  <li id="23" class="list-group-item">11 Veracruz</li>\n\
+                  <li id="23" class="list-group-item">8  &nbsp&nbspYucatán</li>\n\
+                  <li id="23" class="list-group-item">4  &nbsp&nbspZacatecas</li>\n\
+                </ul> \n\
+            </div>';
+ }
         $('#title').html('').append('Monitoreo de Noticias Medios Impresos');
         $('#body').html('').css({
                                 'background-color': '#3e6571',
@@ -699,7 +712,43 @@ var medios ={
          uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
     },
     campanas:function(){
+var map='';
+console.log(screen.width);
+ if(screen.width > 990){
+     map += '<section class="content map-iframe" >\n\
+            <div class="box box-solid">\n\
+                <div id="map">\n\
+                    <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
+                    <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
+                </div>\n\
+            </div>\n\
+        </section>';
 
+ }else{
+     map += '<div class="col-md-12" id="cobertura-list">\n\
+               <ul class="list-group">\n\
+                  <li id="9" class="list-group-item">67 CDMX</li>\n\
+                  <li id="15" class="list-group-item">10 Toluca</li>\n\
+                  <li id="19" class="list-group-item">40 Monterrey</li>\n\
+                  <li id="14" class="list-group-item">49 Guadalajara</li>\n\
+                  <li id="13" class="list-group-item">10 Pachuca</li>\n\
+                  <li id="22" class="list-group-item">18 Querétaro</li>\n\
+                  <li id="21" class="list-group-item">11 Puebla</li>\n\
+                  <li id="30" class="list-group-item">17 Veracruz</li>\n\
+                  <li id="31" class="list-group-item">15 Mérida</li>\n\
+                  <li id="2" class="list-group-item">18 Tijuana</li>\n\
+                  <li id="27" class="list-group-item">21 Villahermosa</li>\n\
+                  <li id="12" class="list-group-item">16 Morelia</li>\n\
+                  <li id="16" class="list-group-item">16 Acapulco</li>\n\
+                  <li id="17" class="list-group-item">18 Cuernavaca</li>\n\
+                  <li id="11" class="list-group-item">18 León</li>\n\
+                  <li id="24" class="list-group-item">20 San Luis Potosí</li>\n\
+                  <li id="20" class="list-group-item">14 Oaxaca</li>\n\
+                  <li id="8" class="list-group-item">11 Chihuahua</li>\n\
+                  <li id="23" class="list-group-item">10 Cancún</li>\n\
+                </ul> \n\
+            </div>';
+ }
         $('#title').html('').append('Monitoreo de Campañas (Spots)');
         $('#body').html('').css({
                                 'background-color': '#3e6571',
