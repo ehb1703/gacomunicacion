@@ -15,7 +15,136 @@
 ========================================================  */
 
 $(document).ready(function () {
-        $( "#modal-login" ).show( 'slide', {}, 10000 );
+    setTimeout (medios.modal(), 4000); 
+     if(screen.width < 990){
+                $('#clients').html('').html('<div id="sub-client">\n\
+                                             <div class="row" id="clientes1">\n\
+                                                <div id="indice-clientes" class="col-md-4" style="padding-top:0;padding-bottom: 32%;">\n\
+                                                     <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" ">\n\
+                                                    <img class="img-responsive" src="img/CONADIC.png" style="    width: 300px;height: 100px;margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding: 12%;">\n\
+                                                     <img class="img-responsive" src="img/PRESIDENCIA.png" stle="width: 300px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top:0">\n\
+                                                     <img class="img-responsive" src="img/CONAGO.png" style="width: 300px;    height: 100px;    margin: auto;" />\n\
+                                                </div> \n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 12%;">\n\
+                                                     <img class="img-responsive" src="img/UANLazul.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>     \n\
+                                            </div>\n\
+                                            <div class="row" id="clientes2">\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/UNIVA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/AEROMEXICO.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/SAMBORNS.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/PLACENCIA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;padding-bottom: 17%;">\n\
+                                                    <img class="img-responsive" src="img/SUPERcolchones.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div> \n\
+                                            </div>\n\
+                                            <div class="row" id="clientes2">\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/CONAGUA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/QUICKLEARNING.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/MONTEPIO.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
+                                                    <img class="img-responsive" src="img/PEMEX.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div>  \n\
+                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;padding-bottom: 17%;">\n\
+                                                    <img class="img-responsive" src="img/MVS.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
+                                                </div> \n\
+                                            </div>\n\
+                                        </div>');
+            }else{
+                $('.map-iframe').css('display','block');
+                $('#cobertura-list').css('display','none');
+                $('#clients').html('').html('<div id="sub-client">\n\
+                 <div class="row" id="clientes1">\n\
+                    <div class="col-md-2 col-sm-6" >\n\
+                        <img class="img-responsive" src="img/CONADIC.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                    <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
+                    </div>  \n\
+                    <div id="indice-clientes" class="col-md-4" style="padding-top:0;">\n\
+                         <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                         <img class="img-responsive" src="img/CONAGO.png"/>\n\
+                    </div> \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                         <img class="img-responsive" src="img/UANLazul.png"/>\n\
+                    </div>     \n\
+                </div>\n\
+                <div class="row" id="clientes2">\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/UNIVA.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/AEROMEXICO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SAMBORNS.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/PLACENCIA.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SUPERcolchones.png"/>\n\
+                    </div> \n\
+                </div>\n\
+                <div class="row" id="clientes2">\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/CONAGUA.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/QUICKLEARNING.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/MONTEPIO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/PEMEX.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/MVS.png"/>\n\
+                    </div> \n\
+                </div>\n\
+                <div class="row" id="clientes2">\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/JALISCO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SEGOB.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SENADO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SONORA.png"/>\n\
+                    </div> \n\
+                </div>\n\
+            </div>\n\
+            </div>');
+            }
 
         $('#cobertura-list ul li').on('click',function(){
             medios.event($(this).attr('id'));
@@ -34,7 +163,7 @@ $(document).ready(function () {
         });
 
     // Inicializacion del mapa de covertura
-        var map = new GMaps({
+      /*  var map = new GMaps({
             div: '#cover-map',
             lat: -12.043333,
             lng: -77.028333
@@ -49,7 +178,7 @@ $(document).ready(function () {
           }
         });
 
-        $('#cover-map').html(map);
+        $('#cover-map').html(map);*/
 
             // Checking for CSS 3D transformation support
     $.support.css3d = supportsCSS3D();
@@ -78,8 +207,63 @@ $(document).ready(function () {
         return false;
     }
 });
+ function tooltipHtml(n, d, e){ /* FUNCION PARA MOSTRAR EL NOMBRE DEL ESTADO EN EL MAPA :s */
+                                    return "<h4>"+n+ " ("+e+") Emisoras</h4>";
+                        }
+
+var map='';
+console.log(screen.width);
+ if(screen.width > 990){
+     map += '<section class="content map-iframe" >\n\
+            <div class="box box-solid">\n\
+                <div id="map">\n\
+                    <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
+                    <svg width="100%" height="450" id="statesvg"></svg> <!-- area de dibujo -->\n\
+                </div>\n\
+            </div>\n\
+        </section>';
+
+ }else{
+     map += '<div class="col-md-12" id="cobertura-list">\n\
+               <ul class="list-group">\n\
+                  <li id="9" class="list-group-item">67 CDMX</li>\n\
+                  <li id="15" class="list-group-item">10 Toluca</li>\n\
+                  <li id="19" class="list-group-item">40 Monterrey</li>\n\
+                  <li id="14" class="list-group-item">49 Guadalajara</li>\n\
+                  <li id="13" class="list-group-item">10 Pachuca</li>\n\
+                  <li id="22" class="list-group-item">18 Querétaro</li>\n\
+                  <li id="21" class="list-group-item">11 Puebla</li>\n\
+                  <li id="30" class="list-group-item">17 Veracruz</li>\n\
+                  <li id="31" class="list-group-item">15 Mérida</li>\n\
+                  <li id="2" class="list-group-item">18 Tijuana</li>\n\
+                  <li id="27" class="list-group-item">21 Villahermosa</li>\n\
+                  <li id="12" class="list-group-item">16 Morelia</li>\n\
+                  <li id="16" class="list-group-item">16 Acapulco</li>\n\
+                  <li id="17" class="list-group-item">18 Cuernavaca</li>\n\
+                  <li id="11" class="list-group-item">18 León</li>\n\
+                  <li id="24" class="list-group-item">20 San Luis Potosí</li>\n\
+                  <li id="20" class="list-group-item">14 Oaxaca</li>\n\
+                  <li id="8" class="list-group-item">11 Chihuahua</li>\n\
+                  <li id="23" class="list-group-item">10 Cancún</li>\n\
+                </ul> \n\
+            </div>';
+ }
+
+
+var sampleData ={};
+            [ "SN", "VZ", "CHP", "OAX", "GRO", "TAB", "MIC", "PUE", "MOR", "EMX", "COL", "CAM", "JAL", "DF", "TLA", "HID",
+            "GUA", "QUE", "YUC", "ZAC", "SLP", "AGU", "QROO", "NY", "DG", "NL", "COA", "SIN", "CH", "BCS", "BCN", "TAM"
+            ].forEach(function(d){
+                var low=Math.round(100*Math.random()),
+                mid=Math.round(100*Math.random()),
+                high=Math.round(100*Math.random());
+
+                sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]),
+                    avg:Math.round((low+mid+high)/3), alter_color:d3.interpolate("#FE0000", "#FE0000")(low/100) , color:d3.interpolate("#848484", "#848484")(low/100)};
+            });
 
 var medios ={
+
     event:function(op){
         $('.modal-body2').html('');
         $('.modal-title2').html('');
@@ -434,6 +618,189 @@ var medios ={
         $('#myModal2').modal('show');
     },
     modal:function(){
+        $( "#modal-login" ).show( 'slide' );
+    },
+    electronicos:function(){
+        $('#title').html('').append('Monitoreo de Noticias Medios Eléctronicos');
+        $('#body').html('').css({
+                            'background-color': '#3e6571',
+                            'color': 'white'
+                            }).html('<li>\n\
+                                     Publicación en página web personalizada de la totalidad de información transmitida con los audios y videos originales dentro de los 5 minutos siguientes al término de la nota.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Consultas y reportes con acceso a base de datos sobre temas y personajes, que permiten interactividad con información histórica desde 2002 (cualitativa, cuantitativa y graficada). \n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Documento para impresión de notas.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Transportación de información a Excel con acceso al testigo original de las notas.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     “Administración” de audios y videos originales (copiar a disco duro, Cd, Dvd o reenviar vía correo electrónico).  \n\
+                                    </li>\n\
+                                    <li>\n\
+                                     De las 05:30 a las 00:00 envío de información. \n\
+                                    </li>\n\
+                                    <li>\n\
+                                     “Alertas informativas” mediante envío de audios y videos a teléfono celular y correos electrónicos, a más tardar a los cinco minutos de terminada su transmisión. \n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Transcripción textual de información a solicitud expresa. \n\
+                                    </li>\n\
+                                     <li>\n\
+                                     CD mensual con información transmitida –audios y videos-. \n\
+                                    </li>\n\
+                                     <li>\n\
+                                     Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
+                                    </li>\n\
+                                    <p><strong>COBERTURA.</strong> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
+                                    ');
+        $('#footer').html('');
+        $('#myModal2').modal('show');
+    },
+    impresos:function(){
+        $('#title').html('').append('Monitoreo de Noticias Medios Impresos');
+        $('#body').html('').css({
+                                'background-color': '#3e6571',
+                                'color': 'white'
+                            }).html('<li>\n\
+                                    Acceso a página web con posibilidad de navegar sin abandonar la propia aplicación.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Consulta de testigos originales (texto e imagen).\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 Revistas y principales Portales en Internet. La revisión de diarios se realiza sobre la <strong>PUBLICACIÓN ORIGINAL IMPRESA</strong> -no versiones en internet-.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Envío de documento PDF por correo electrónico a las 6:30 horas de diarios de la CDMX, a las 8:30 horas del resto de los estados y publicación en página web desde las 00:30 horas.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Reporte Gráfico Cuantitativo con el número de publicaciones por categoría (Primeras Planas, Columnas, Cartones, etc), analizando la información por fecha y personaje con consulta histórica. \n\
+                                    </li>\n\
+                                    <li>\n\
+                                    Número de publicaciones diarias por periódico.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Consulta de la totalidad de información publicada en los diarios auditados.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad. \n\
+                                    </li>\n\
+                                    '+map);
+        $('#footer').html('');
+        $('#myModal2').modal('show');
+         uStates.draw("#statesvg", sampleData, tooltipHtml);
+    },
+    campanas:function(){
 
-    }
+        $('#title').html('').append('Monitoreo de Campañas (Spots)');
+        $('#body').html('').css({
+                                'background-color': '#3e6571',
+                                'color': 'white'
+                            }).html('<p>\n\
+                                    Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
+                                    </p>\n\
+                                    <li>\n\
+                                     Monitoreo simultaneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Reconocimiento de emisiones en 3 segundos.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     “Testigo” auditivo de la transmisión original (3 segundos previos y posteriores al spot auditado)\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Generación de información, reportes y gráficos “en línea”.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                    Detección de inconsistencias en pautas contratadas.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Consulta por ciudad, hora, empresa, versión y grupo emisor.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Auditoría de transmisiones 24 x 7 x 365. \n\
+                                    </li>\n\
+                                     <li>\n\
+                                     Posibilidad de realizar “búsquedas históricas” de información. \n\
+                                    </li>\n\
+                                     <li>\n\
+                                     Grabación en audio -24 horas- de transmisión de emisoras.\n\
+                                    </li>\n\
+                                    '+map);
+        $('#footer').html('');
+        $('#myModal2').modal('show');
+         uStates.draw("#statesvg", sampleData, tooltipHtml);
+    },
+     redes:function(){
+        $('#title').html('').append('Monitoreo de Redes Sociales');
+        $('#body').html('').css({
+                                    'background-color': '#3e6571',
+                                    'color': 'white'
+                                }).html('<p>\n\
+                                    Servicio que tiene como objetivo monitorear la tendencia de los textos vinculados con los temas o personajes de interés, y que son emitidos dentro de redes sociales (Twitter). Este servicio pretende dar seguimiento a las cuentas de tweeter indicadas, mostrando el número de tweets, alcance, impactos, actividad de las cuentas, términos destacados alrededor de estas cuentas, cuentas, hashtags, tweets e imágenes destacadas.\n\
+                                    <p>Beneficios: Tener un panorama claro del impacto que tienen cada una de las cuentas monitoreadas en tweeter, así como los usuarios que están en contacto con ellas constantemente y las palabras más utilizadas alrededor de estos temas.</p>\n\
+                                    </p>\n\
+                                    <p><strong>Características</strong></p>\n\
+                                    <li>\n\
+                                     Seguimiento personalizado las 24 horas del día por cuenta monitoreada\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     REvaluación de tweets, indicando número de tweets, alcance e impactos generados.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Estructura y contenidos diseñados a las necesidades del cliente.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Gráficas a través del portal de internet con acceso mediante usuario y password.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                    Envío de reportes quincenales de forma electrónica con la información arriba mencionada, incluyendo gráficas.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Entrega mensual de Cd conteniendo los reportes del periodo.\n\
+                                    </li>\n\
+                                    ');
+        $('#footer').html('');
+        $('#myModal2').modal('show');
+    },
+     app:function(){
+        $('#title').html('').append('Aplicación para Dispositivos Móviles');
+        $('#body').html('').css({
+                                'background-color': '#3e6571',
+                                'color': 'white'
+                            }).html('<p>\n\
+                                    Independientemente de página web para consulta de información y “alertas informativas”, se cuenta con una aplicación para dispositivos móviles (iPad / iPhone).\n\
+                                    </p>\n\
+                                    <p>Acceso a página web con posibilidad de navegar desde los dispositivos antes señalados, sin necesidad de abandonar la propia aplicación.</p>\n\
+                                    <p>Generación de Gráficos y Reportes Ejecutivos “en línea” considerando los parámetros siguientes:</p>\n\
+                                    <li>\n\
+                                     Reporte gráfico sobre el análisis cuantitativo, cualitativo y tiempo asignado a las noticias sobre los temas y/o personajes monitoreados, hasta 30 días anteriores.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Posibilidad de elegir la información de un día, tema y/o personaje en particular a graficar.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Reporte cualitativo con acceso directo a los testigos originales (audio, video, notas publicadas, spot y menciones en redes).\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Tipo de información transmitida.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                    Ubicación de las notas.\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Reporte de Tendencia Informativa (Comportamiento histórico de la información –mensual, quincenal, semanal o diario-).\n\
+                                    </li>\n\
+                                    <li>\n\
+                                     Calificación y número de menciones por sistema informativo.\n\
+                                    </li>\n\
+                                    ');
+        $('#footer').html('');
+        $('#myModal2').modal('show');
+    },
+    
 }

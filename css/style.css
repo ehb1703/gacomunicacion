@@ -323,7 +323,12 @@ footer a, footer a:hover {
 }
 /* Pantalla Chica*/
 @media screen and (max-width: 990px) {
-
+    .map-iframe{
+    display:'none';
+  }
+  #cobertura-list{
+    display:'block';
+  }
     #intro-div{
       border-left: 0px;
       border-right: 0px;
@@ -472,6 +477,12 @@ footer a, footer a:hover {
   #logo-img {
     width: 60%;
     margin: auto;
+  }
+  .map-iframe{
+    display:'block';
+  }
+  #cobertura-list{
+    display:'none';
   }
     #intro-div{
       border-left: 1px solid #104b5c;
