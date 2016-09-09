@@ -727,24 +727,26 @@ console.log(screen.width);
  }else{
      map += '<div class="col-md-12" id="cobertura-list">\n\
                <ul class="list-group">\n\
-                  <li id="9" class="list-group-item">67 CDMX</li>\n\
-                  <li id="15" class="list-group-item">10 Toluca</li>\n\
+                  <li id="9" class="list-group-item">63 CDMX</li>\n\
+                  <li id="15" class="list-group-item">44 Cable</li>\n\
+                  <li id="15" class="list-group-item">11 Toluca</li>\n\
+                  <li id="15" class="list-group-item">18 Hermosillo</li>\n\
                   <li id="19" class="list-group-item">40 Monterrey</li>\n\
-                  <li id="14" class="list-group-item">49 Guadalajara</li>\n\
-                  <li id="13" class="list-group-item">10 Pachuca</li>\n\
-                  <li id="22" class="list-group-item">18 Querétaro</li>\n\
-                  <li id="21" class="list-group-item">11 Puebla</li>\n\
-                  <li id="30" class="list-group-item">17 Veracruz</li>\n\
-                  <li id="31" class="list-group-item">15 Mérida</li>\n\
-                  <li id="2" class="list-group-item">18 Tijuana</li>\n\
-                  <li id="27" class="list-group-item">21 Villahermosa</li>\n\
-                  <li id="12" class="list-group-item">16 Morelia</li>\n\
-                  <li id="16" class="list-group-item">16 Acapulco</li>\n\
+                  <li id="14" class="list-group-item">50 Guadalajara</li>\n\
+                  <li id="13" class="list-group-item">8 Pachuca</li>\n\
+                  <li id="22" class="list-group-item">19 Querétaro</li>\n\
+                  <li id="21" class="list-group-item">15 Puebla</li>\n\
+                  <li id="30" class="list-group-item">21 Veracruz</li>\n\
+                  <li id="31" class="list-group-item">19 Mérida</li>\n\
+                  <li id="2" class="list-group-item">19 Tijuana</li>\n\
+                  <li id="27" class="list-group-item">22 Villahermosa</li>\n\
+                  <li id="12" class="list-group-item">15 Morelia</li>\n\
+                  <li id="16" class="list-group-item">15 Acapulco</li>\n\
                   <li id="17" class="list-group-item">18 Cuernavaca</li>\n\
-                  <li id="11" class="list-group-item">18 León</li>\n\
+                  <li id="11" class="list-group-item">15 León</li>\n\
                   <li id="24" class="list-group-item">20 San Luis Potosí</li>\n\
                   <li id="20" class="list-group-item">14 Oaxaca</li>\n\
-                  <li id="8" class="list-group-item">11 Chihuahua</li>\n\
+                  <li id="8" class="list-group-item">10 Chihuahua</li>\n\
                   <li id="23" class="list-group-item">10 Cancún</li>\n\
                 </ul> \n\
             </div>';
