@@ -310,6 +310,7 @@ footer a, footer a:hover {
     font-size: x-small;
   }
 
+
   /* Nombre de la Empresa */
   
 
@@ -326,6 +327,11 @@ footer a, footer a:hover {
     .map-iframe{
     display:'none';
   }
+  #services-row img{
+  width: 60%;
+  margin: auto;
+  padding-top: 3%;
+}
   #cobertura-list{
     display:'block';
   }
@@ -474,6 +480,11 @@ footer a, footer a:hover {
     #logo{
       width: 93%;
   }
+  #services-row img{
+  /*width: 60%;*/
+  margin: auto;
+  padding-top: 3%;
+}
   #logo-img {
     width: 60%;
     margin: auto;
@@ -658,11 +669,7 @@ footer a, footer a:hover {
   font-weight: 600; 
   padding: 3%;
 }
-#services-row img{
-  /*width: 60%;*/
-  margin: auto;
-  padding-top: 3%;
-}
+
 #services-row2 img{
   width: 60%;
   margin: auto;
