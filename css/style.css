@@ -484,6 +484,10 @@ footer a, footer a:hover {
   #cobertura-list{
     display:'none';
   }
+  #services-row{
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
     #intro-div{
       border-left: 1px solid #104b5c;
       border-right: 1px solid #104b5c;
@@ -655,7 +659,7 @@ footer a, footer a:hover {
   padding: 3%;
 }
 #services-row img{
-  width: 60%;
+  /*width: 60%;*/
   margin: auto;
   padding-top: 3%;
 }
@@ -785,11 +789,11 @@ footer a, footer a:hover {
   transition: transfom opacity 1.5s;
 }
 .div-img:hover .img {
-  transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -webkit-transform: scale(0.8);
-  -o-transform: scale(0.8);
+  transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
 .div-img:hover .text {
   transform: translate(0px, -20px);

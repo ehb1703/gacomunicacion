@@ -60,34 +60,19 @@
                     <div id="logo-col" class="col-md-offset-4 col-md-4">
                         <img id="logo-img" class="img-responsive centered" src="img/LOGOwebHEADER.png">
                     </div>
-                    <div class="col-md-3">
-                        <div id="modal-login" class="modal-dialog modal-sm" role="document" style="display:none">
+                    <div class="col-md-offset-1 col-md-2">
+                        <div class="row" >
                           <div class="modal-content">
-                            <div class="modal-header">
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                              </button>
-                              <h4 class="modal-title">Acceso a clientes.</h4>
-                            </div>
                             <div class="modal-body">
+                            <h4 class="modal-title">Acceso a clientes.</h4>
                               <div id="formContainer">
-                                  <form class="form-signin" id="login" role="form">
-                                    <!--<select class="form-control">
-                                        <option>Seleccione su Sistema</option>
-                                        <option>Sistema de Noticias</option>
-                                        <option>Sistema de Spots</option>
-                                    </select>-->
+                                  <form class="form-signin-xs" id="login" role="form">
                                     <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>
                                     <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>
-                                    <button class="btn btn-primary btn-block" type="submit">Ingresar</button>
+                                    <button class="btn btn-primary btn-block btn-xs" type="submit">Ingresar</button>
                                   </form>
                                 </div>
                             </div>
-                            <!--<div class="modal-footer">
-                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                          </div> /.modal-content -->
                         </div>
                     </div>
                 </div>
@@ -137,27 +122,25 @@
                 </div>
             </div>
             <div class="row" id="services-row">
-                <div class="col-md-4 col-sm-6 div-img">
+                <div class="col-md-1 col-sm-6 div-img">
+                </div>
+                <div class="col-md-2 col-sm-6 div-img">
                     <img onclick="medios.electronicos();" class="img-responsive img" src="img/electronicos.png" >
                 </div>
-                <div class="col-md-4 col-sm-6 div-img">
+                <div class="col-md-2 col-sm-6 div-img">
                     <img onclick="medios.impresos();" class="img-responsive img" src="img/impresos.png">
                 </div>
-                <div class="col-md-4 col-sm-6 div-img">
+                <div class="col-md-2 col-sm-6 div-img">
                     <a onclick="medios.campanas();" id="coverup-li" href="#coverup"><img class="img-responsive img" src="img/comercial.png" ></a>
                 </div>
-               
-            </div>
-            <div class="row" id="services-row2">
-                <div class="col-md-2 col-sm-6 div-img">
-                </div>
-                 <div class="col-md-4 col-sm-6 div-img">
+                 <div class="col-md-2 col-sm-6 div-img">
                     <img onclick="medios.redes();" class="img-responsive img" src="img/redesociales.png">
                 </div>
-                <div class="col-md-4 col-sm-6 div-img">
+                <div class="col-md-2 col-sm-6 div-img">
                     <img onclick="medios.app();" class="img-responsive img" src="img/app.png">
                 </div>
-
+                 <div class="col-md-1 col-sm-6 div-img">
+                </div>
             </div>
     </div>
 
