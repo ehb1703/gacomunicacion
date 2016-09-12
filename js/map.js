@@ -161,10 +161,10 @@ var load = function( state, option ) {
         if( value.id == state )     _complete_name = value.n;
     });
 
-    $('.map-iframe').hide();
-    $('.frame-page-header-map').show();
- 	$('#acordeon_periodicos').html('').html('<i class="fa fa-spinner"></i> Cargando notas...');
-    $('#_state_option').html('<h1>Región ' + regions[ state ] +'&nbsp&nbsp<small class="board-character">'+_complete_name+'</small></h1>');
+   // $('.map-iframe').hide();
+   // $('.frame-page-header-map').show();
+ 	//$('#acordeon_periodicos').html('').html('<i class="fa fa-spinner"></i> Cargando notas...');
+    //$('#_state_option').html('<h1>Región ' + regions[ state ] +'&nbsp&nbsp<small class="board-character">'+_complete_name+'</small></h1>');
 
     if(option != 8)
     {
@@ -370,10 +370,10 @@ var load = function( state, option ) {
 		}
 		function click(d){
 
-            selected_state = d.id;
+         /*   selected_state = d.id;
             $(".modal-title").html( 'Región ' + regions[ d.id ] );
             $(".modal-state").html( '&nbsp&nbsp&nbsp'+ d.n );
-			$("#modal-cst-info").modal('show');
+			$("#modal-cst-info").modal('show');*/
 		}
 
 		d3.select(id).selectAll(".state")
@@ -387,6 +387,7 @@ var load = function( state, option ) {
 })();
 
 // Boton envio del formulario
+/*
 $('.btn-modal-map').click(function(e){
     
 	var choice;
@@ -425,4 +426,4 @@ $('.btn-modal-map').click(function(e){
     $("#modal-cst-info").modal('hide');
 	load( selected_state, choice );
 
-});
+});*/
