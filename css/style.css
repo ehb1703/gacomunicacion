@@ -18,15 +18,18 @@
 @font-face
 {
    font-family: "AvenirPersonalizada";
-   src: url("../fonts/AvenirNextLTPro-It.otf");
-   font-style: 'Italic';         
+   src: url("../fonts/AvenirNextLTPro-Regular.otf?#iefix");
+   /*font-style: 'Italic';*/
+   /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
+  /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
 }
+
 
 /*================================
     GENERAL STYLES
 ==================================*/
 body {
-    font-family: 'Avenir Next';
+    font-family: 'AvenirPersonalizada';
     width: 100%;
 }
 
@@ -232,7 +235,7 @@ footer a, footer a:hover {
 }
 
 #login{
-  background: #f3f3f3;
+  background: #104b5c;
   z-index: 100;
 }
 
@@ -480,10 +483,30 @@ footer a, footer a:hover {
     #logo{
       width: 93%;
   }
+  #login-modal-col{
+    padding-top: 6.5%;
+  }
   #services-row img{
-  /*width: 60%;*/
+  width: 85%;
   margin: auto;
   padding-top: 3%;
+}
+#login-modal {
+  padding-left: 15%;
+  padding-right: 10%;
+}
+#login-modal .modal-content{
+  background-color: #104b5c;
+  color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#login-modal .modal-title{
+  font-weight: 100;
+}
+#indice-clientes{
+  padding-top: 4%;
 }
   #logo-img {
     width: 60%;
@@ -496,8 +519,8 @@ footer a, footer a:hover {
     display:'none';
   }
   #services-row{
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-top: 12%;
+    padding-bottom: 14%;
   }
     #intro-div{
       border-left: 1px solid #104b5c;
@@ -596,7 +619,7 @@ footer a, footer a:hover {
   filter: alpha(opacity=60);
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   text-align: center;
-  height: 250px;
+  height: 267px;
 }
 #intro-div-2{
   height: 100%;
@@ -604,6 +627,14 @@ footer a, footer a:hover {
 
 
 }
+
+/*Pantalla xGde*/
+@media screen and (min-width: 1500px) {
+    #login-modal-col{
+        padding-top:9.5%;
+    }
+}
+
 /*.brand-img{
   background-image: url('../img/logoInfo.png') no-repeat center;
 }*/
@@ -634,6 +665,7 @@ footer a, footer a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
+  height: 70%;
 }
 .row{
   margin-right: 0px; 
@@ -644,19 +676,25 @@ footer a, footer a:hover {
   margin-top: 0px;
 }
 .textAv{
-  font-family: 'Avenir Next';
-  src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");
+  font-family: 'AvenirPersonalizada';
+ /* src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");*/
 }
 
 #sub-home{
-   background-color: rgba(0,78,96,0.60);
+  /* background-color: rgba(0,78,96,0.60);*/
 
 }
 
 
+#text-divs {
+ /* padding: 2%;*/
+  background-color:#a1babd; 
+ /* border-left: 1px solid #104b5c;*/
+}
 #text-divs div{
   padding: 2%;
-/*  border-left: 1px solid #104b5c;*/
+  background-color:#a1babd; 
+ /* border-left: 1px solid #104b5c;*/
 }
 
 
@@ -710,6 +748,7 @@ footer a, footer a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
+  height: 100%;
 }
 #sub-client{
   background-color: rgba(0,78,96,0.70);
@@ -718,7 +757,7 @@ footer a, footer a:hover {
   padding-top: 2%;
 }
 #clientes2 div{
-  padding-top: 2%;
+  padding-top: 5%;
   padding-bottom: 2%;
 }
 #info{
@@ -743,7 +782,7 @@ footer a, footer a:hover {
   padding-top: 5%;
 }
 #services{
-  padding-top: 1%;
+  padding-top: 5%;
 }
 #cliente{
   padding-top: 1%;
@@ -808,7 +847,7 @@ footer a, footer a:hover {
 }
 
 #text-divs div:hover {
-  background-color: #040404;
+  background-color: #104b5c;
   color: white;
 }
 #mail{

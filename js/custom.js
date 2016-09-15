@@ -16,7 +16,7 @@
 
 $(document).ready(function () {
     setTimeout (medios.modal(), 4000); 
-     if(screen.width < 990){
+    /* if(screen.width < 990){
                 $('#clients').html('').html('<div id="sub-client">\n\
                                              <div class="row" id="clientes1">\n\
                                                 <div id="indice-clientes" class="col-md-4" style="padding-top:0;padding-bottom: 32%;">\n\
@@ -144,7 +144,7 @@ $(document).ready(function () {
                 </div>\n\
             </div>\n\
             </div>');
-            }
+            }*/
 
         $('#cobertura-list ul li').on('click',function(){
             medios.event($(this).attr('id'));
