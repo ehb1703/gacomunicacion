@@ -23,6 +23,14 @@
    /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
   /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
 }
+@font-face
+{
+   font-family: "AvenirBold";
+   src: url("../fonts/AvenirNextLTPro-Bold.otf?#iefix");
+   /*font-style: 'Italic';*/
+   /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
+  /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
+}
 
 
 /*================================
@@ -335,6 +343,13 @@ footer a, footer a:hover {
   margin: auto;
   padding-top: 3%;
 }
+#home-row {
+  background-image: url('../img/FONDO2.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 50%;
+}
   #cobertura-list{
     display:'block';
   }
@@ -379,7 +394,10 @@ footer a, footer a:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   text-align: center;
 }
-
+#login-modal .modal-content{
+  background-color: #104b5c;
+  color: white;
+}
 
   /* Informacion de Contacto y Dirección de la Empresa */
   .info-address{
@@ -514,6 +532,7 @@ footer a, footer a:hover {
   }
   .map-iframe{
     display:'block';
+    padding-top: 0px;
   }
   #cobertura-list{
     display:'none';
@@ -757,7 +776,7 @@ footer a, footer a:hover {
   padding-top: 2%;
 }
 #clientes2 div{
-  padding-top: 5%;
+  padding-top: 2%;
   padding-bottom: 2%;
 }
 #info{
@@ -853,5 +872,19 @@ footer a, footer a:hover {
 #mail{
   padding-top: 1%;
 }
-
+#myModal2 .modal-body{
+  font-family: "AvenirPersonalizada";
+  padding: 15px;
+  font-size: 16px;
+}
+#myModal2 #title{
+  font-family: "AvenirBold";
+  color: #5e5e5f;
+}
+#myModal2 ol li{
+  padding-top: 15px;
+}
+.title-bold{
+  font-family: "AvenirBold";
+}
 

@@ -16,135 +16,11 @@
 
 $(document).ready(function () {
     setTimeout (medios.modal(), 4000); 
-    /* if(screen.width < 990){
-                $('#clients').html('').html('<div id="sub-client">\n\
-                                             <div class="row" id="clientes1">\n\
-                                                <div id="indice-clientes" class="col-md-4" style="padding-top:0;padding-bottom: 32%;">\n\
-                                                     <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
-                                                </div>\n\
-                                                <div class="col-md-2 col-sm-6" ">\n\
-                                                    <img class="img-responsive" src="img/CONADIC.png" style="    width: 300px;height: 100px;margin: auto;"/>\n\
-                                                </div>\n\
-                                                <div class="col-md-2 col-sm-6" style="padding: 12%;">\n\
-                                                     <img class="img-responsive" src="img/PRESIDENCIA.png" stle="width: 300px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>\n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top:0">\n\
-                                                     <img class="img-responsive" src="img/CONAGO.png" style="width: 300px;    height: 100px;    margin: auto;" />\n\
-                                                </div> \n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 12%;">\n\
-                                                     <img class="img-responsive" src="img/UANLazul.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>     \n\
-                                            </div>\n\
-                                            <div class="row" id="clientes2">\n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/UNIVA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>\n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/AEROMEXICO.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>  \n\
-                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/SAMBORNS.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>  \n\
-                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/PLACENCIA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>  \n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;padding-bottom: 17%;">\n\
-                                                    <img class="img-responsive" src="img/SUPERcolchones.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div> \n\
-                                            </div>\n\
-                                            <div class="row" id="clientes2">\n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/CONAGUA.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>\n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/QUICKLEARNING.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>  \n\
-                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/MONTEPIO.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>  \n\
-                                                <div class="col-md-offset-1 col-md-2 col-sm-6" style="padding-top: 11%;">\n\
-                                                    <img class="img-responsive" src="img/PEMEX.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div>  \n\
-                                                <div class="col-md-2 col-sm-6" style="padding-top: 11%;padding-bottom: 17%;">\n\
-                                                    <img class="img-responsive" src="img/MVS.png" style="    width: 301px;    height: 100px;    margin: auto;"/>\n\
-                                                </div> \n\
-                                            </div>\n\
-                                        </div>');
+     if(screen.width < 990){
+               Page.pantallaChica();
             }else{
-                $('.map-iframe').css('display','block');
-                $('#cobertura-list').css('display','none');
-                $('#clients').html('').html('<div id="sub-client">\n\
-                 <div class="row" id="clientes1">\n\
-                    <div class="col-md-2 col-sm-6" >\n\
-                        <img class="img-responsive" src="img/CONADIC.png"/>\n\
-                    </div>\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                    <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
-                    </div>  \n\
-                    <div id="indice-clientes" class="col-md-4" style="padding-top:0;">\n\
-                         <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-2 col-sm-6">\n\
-                         <img class="img-responsive" src="img/CONAGO.png"/>\n\
-                    </div> \n\
-                    <div class="col-md-2 col-sm-6">\n\
-                         <img class="img-responsive" src="img/UANLazul.png"/>\n\
-                    </div>     \n\
-                </div>\n\
-                <div class="row" id="clientes2">\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/UNIVA.png"/>\n\
-                    </div>\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/AEROMEXICO.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/SAMBORNS.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/PLACENCIA.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/SUPERcolchones.png"/>\n\
-                    </div> \n\
-                </div>\n\
-                <div class="row" id="clientes2">\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/CONAGUA.png"/>\n\
-                    </div>\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/QUICKLEARNING.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/MONTEPIO.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/PEMEX.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/MVS.png"/>\n\
-                    </div> \n\
-                </div>\n\
-                <div class="row" id="clientes2">\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
-                    </div>\n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/JALISCO.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/SEGOB.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/SENADO.png"/>\n\
-                    </div>  \n\
-                    <div class="col-md-2 col-sm-6">\n\
-                        <img class="img-responsive" src="img/SONORA.png"/>\n\
-                    </div> \n\
-                </div>\n\
-            </div>\n\
-            </div>');
-            }*/
+                Page.pantallaGde();
+            }
 
         $('#cobertura-list ul li').on('click',function(){
             medios.event($(this).attr('id'));
@@ -228,6 +104,306 @@ var sampleData ={};
                 sampleData[d]={low:d3.min([low,mid,high]), high:d3.max([low,mid,high]),
                     avg:Math.round((low+mid+high)/3), alter_color:d3.interpolate("#002B32", "#002B32")(low/100) , color:d3.interpolate("#D1D2D4", "#D1D2D4")(low/100)};
             });
+
+
+var Page ={
+    pantallaChica:function(){
+        $('#inicio').html('').html('<div id="home" class="textAv">\n\
+            <div class="row" id="home-row">\n\
+                <div class="row" id="logo-row">\n\
+                    <div id="logo-col" class="col-md-offset-1 col-md-4">\n\
+                        <img id="logo-img" class="img-responsive centered" src="img/LOGOwebHEADER.png">\n\
+                    </div>\n\
+                </div>\n\
+                 <div class="row" id="login-modal-col">\n\
+                    <div id="login-modal" class="row" >\n\
+                          <div class="modal-content" >\n\
+                            <div class="modal-body">\n\
+                                <h4 class="modal-title">Acceso a clientes</h4>\n\
+                                  <div id="formContainer">\n\
+                                      <form class="form-signin-xs" id="login" role="form">\n\
+                                            <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>\n\
+                                            <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>\n\
+                                            <button class="btn btn-primary btn-block btn-xs" type="submit">Ingresar</button>\n\
+                                      </form>\n\
+                                    </div>\n\
+                                </div>\n\
+                            </div>\n\
+                        </div>\n\
+                    </div>\n\
+    </div>\n\
+    <div class="row" id="text-divs"> \n\
+                    <div class="col-md-6" id="intro-div">\n\
+                        <h3 class="text-left" >VISIÓN</h3>\n\
+                        <p>\n\
+                           Proyectar a GA Comunicación como empresa líder, competitiva y rentable en el monitoreo y análisis de información mediática; enfrentamos los retos de manera innovadora, aprovechando con actitud, la experiencia y fortaleza de cada uno de nuestros colaboradores, para generar una respuesta eficaz con información estratégica, oportuna y de calidad.\n\
+                        </p>\n\
+                    </div>\n\
+                     <div class="col-md-6" id="intro-div-2">\n\
+                        <h3 class="text-right" >MISIÓN</h3>\n\
+                        <p>\n\
+                            Informar real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.\n\
+                        </p>\n\
+                    </div>\n\
+                </div>\n\
+    </div>');
+                $('#clients').html('').html('<div id="sub-client">\n\
+                                             <div class="row" id="clientes1">\n\
+                                                <div id="indice-clientes" class="col-md-4" style="padding-top:0;padding-bottom: 10%;">\n\
+                                                     <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" ">\n\
+                                                    <img class="img-responsive" src="img/PRESIDENCIA.png" />\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/SEGOB.png" />\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/CONAGUA.png"  />\n\
+                                                </div> \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/CONADIC.png" />\n\
+                                                </div>     \n\
+                                            </div>\n\
+                                            <div class="row" id="clientes1">\n\
+                                                <div class="col-md-2 col-sm-6" ">\n\
+                                                    <img class="img-responsive" src="img/COFEPRIS.png" />\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/PEMEX.png" />\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/SENADO.png"  />\n\
+                                                </div> \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/CONAGO.png" />\n\
+                                                </div>   \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/JALISCO.png" />\n\
+                                                </div>   \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/SONORA.png" />\n\
+                                                </div>   \n\
+                                            </div>\n\
+                                            <div class="row" id="clientes2">\n\
+                                                <div class="col-md-2 col-sm-6" ">\n\
+                                                    <img class="img-responsive" src="img/EDOMEX.png" />\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/SEDESA.png" />\n\
+                                                </div>\n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/BANAMEX.png"  />\n\
+                                                </div> \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/MVS.png" />\n\
+                                                </div>   \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/AEROMEXICO.png" />\n\
+                                                </div>   \n\
+                                                <div class="col-md-2 col-sm-6" >\n\
+                                                     <img class="img-responsive" src="img/SAMBORNS.png" />\n\
+                                                </div>   \n\
+                                            </div>\n\
+                                        </div>\n\
+                                        <section id="contact">\n\
+        <div class="row">\n\
+            <div class="col-md-12" id="cobertura-div">\n\
+               <img src="img/PLECAcontacto.png"  style="width:100%;height:4px;"/>\n\
+            </div>\n\
+        </div>\n\
+        <div class="row">\n\
+            <div class="col-md-12">\n\
+               <img src="img/HEADERcontacto.png" class="img-responsive header-cobertura" id="header-services" >\n\
+            </div>\n\
+        </div>\n\
+        <div class="row" id="row-contact">\n\
+            <div class="col-md-8">\n\
+            <div class="row" id="text-area">\n\
+                <div class="col-md-9" id="presentacion">\n\
+                <p class="info-text">Para nosotros es muy importante tu opinión.</p>\n\
+                <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>\n\
+                <p class="gacom">G.A. Comunicación, SC.</p>\n\
+                <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
+                <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
+                <a href="tel:5553739889">(55) 5373 9889</a></p>\n\
+                <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
+            </div>\n\
+             <div class="col-md-3" >\n\
+                    <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
+            </div>\n\
+            </div>\n\
+            </div>\n\
+        </div>\n\
+    </section>\n\
+    ');
+    },
+    pantallaGde:function(){
+        $('#inicio').html('').html('<div id="home" class="textAv">\n\
+        <div class="row" id="home-row">\n\
+             <div class="col-md-3 col-xs-6" id="login-modal-col">\n\
+                    <div id="login-modal" class="row" >\n\
+                      <div class="modal-content" >\n\
+                        <div class="modal-body">\n\
+                            <h4 class="modal-title">Acceso a clientes</h4>\n\
+                              <div id="formContainer">\n\
+                                  <form class="form-signin-xs" id="login" role="form">\n\
+                                        <input type="email" class="form-control" name="loginEmail" id="loginEmail" placeholder="Nombre de Usuario" required>\n\
+                                        <input type="password" class="form-control" name="loginPass" id="loginPass" placeholder="Contraseña" required>\n\
+                                        <button class="btn btn-primary btn-block btn-xs" type="submit">Ingresar</button>\n\
+                                  </form>\n\
+                                </div>\n\
+                            </div>\n\
+                        </div>\n\
+                    </div>\n\
+                </div>\n\
+                <div class="row" id="logo-row">\n\
+                    <div id="logo-col" class="col-md-offset-1 col-md-4">\n\
+                        <img id="logo-img" class="img-responsive centered" src="img/LOGOwebHEADER.png">\n\
+                    </div>\n\
+                </div>\n\
+                 <div class="row" id="text">\n\
+                    <div class="col-md-offset-3 col-md-6 col-md-offset-3 text-center" id="title-text">\n\
+                        <!--<span>GA Comunicación</span><br>-->\n\
+                        <!--<span> es pionera en el monitoreo de radio y televisión<br> con 30 años de experiencia</span>-->\n\
+                    </div>\n\
+                </div>\n\
+                \n\
+            \n\
+    </div>\n\
+    <div class="row" id="text-divs"> \n\
+                    <div class="col-md-6" id="intro-div">\n\
+                        <h3 class="text-left" >VISIÓN</h3>\n\
+                        <p>\n\
+                           Proyectar a GA Comunicación como empresa líder, competitiva y rentable en el monitoreo y análisis de información mediática; enfrentamos los retos de manera innovadora, aprovechando con actitud, la experiencia y fortaleza de cada uno de nuestros colaboradores, para generar una respuesta eficaz con información estratégica, oportuna y de calidad.\n\
+                        </p>\n\
+                    </div>\n\
+                     <div class="col-md-6" id="intro-div-2">\n\
+                        <h3 class="text-right" >MISIÓN</h3>\n\
+                        <p>\n\
+                            Informar real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.\n\
+                        </p>\n\
+                    </div>\n\
+                </div>\n\
+    </div>');
+         $('.map-iframe').css('display','block');
+                $('#cobertura-list').css('display','none');
+                $('#clients').html('').html('<div id="clients">\n\
+            <div id="sub-client">\n\
+                <div class="row" >\n\
+                    <div id="indice-clientes" class="col-md-12">\n\
+                         <img class="img-responsive" src="img/PLECAmarcas.png"/>\n\
+                    </div>  \n\
+                </div>\n\
+                <div class="row" >\n\
+                    <div id="indice-clientes2" class="col-md-offset-4 col-md-4">\n\
+                         <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                    </div>  \n\
+                </div>\n\
+                 <div class="row" id="clientes1">\n\
+                    <div class="col-md-2 col-sm-6" >\n\
+                        <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                    <img class="img-responsive" src="img/SEGOB.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                         <img class="img-responsive" src="img/CONAGUA.png"/>\n\
+                    </div> \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                         <img class="img-responsive" src="img/CONADIC.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/COFEPRIS.png"/>\n\
+                    </div>     \n\
+                </div>\n\
+                <div class="row" id="clientes1">\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/PEMEX.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SENADO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/CONAGO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/JALISCO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SONORA.png"/>\n\
+                    </div> \n\
+                </div>\n\
+                <div class="row" id="clientes1">\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/EDOMEX.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SEDESA.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/BANAMEX.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/MVS.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/AEROMEXICO.png"/>\n\
+                    </div> \n\
+                </div>\n\
+                <div class="row" id="clientes2">\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/SAMBORNS.png"/>\n\
+                    </div>\n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/MONTEPIO.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/PLACENCIA.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/UNIVA.png"/>\n\
+                    </div>  \n\
+                    <div class="col-md-2 col-sm-6">\n\
+                        <img class="img-responsive" src="img/QUICKLEARNING.png"/>\n\
+                    </div> \n\
+                </div>\n\
+            </div>\n\
+            </div>\n\
+        </div>\n\
+        <section id="contact">\n\
+        <div class="row">\n\
+            <div class="col-md-12" id="cobertura-div">\n\
+               <img src="img/PLECAcontacto.png"  style="width:100%;height:4px;"/>\n\
+            </div>\n\
+        </div>\n\
+        <div class="row">\n\
+            <div class="col-md-12">\n\
+               <img src="img/HEADERcontacto.png" class="img-responsive header-cobertura" id="header-services" >\n\
+            </div>\n\
+        </div>\n\
+        <div class="row" id="row-contact">\n\
+            <div class="col-md-8">\n\
+            <div class="row" id="text-area">\n\
+                <div class="col-md-9" id="presentacion">\n\
+                <p class="info-text">Para nosotros es muy importante tu opinión.</p>\n\
+                <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>\n\
+                <p class="gacom">G.A. Comunicación, SC.</p>\n\
+                <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
+                <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
+                <a href="tel:5553739889">(55) 5373 9889</a></p>\n\
+                <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
+            </div>\n\
+             <div class="col-md-3" >\n\
+                    <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
+            </div>\n\
+            </div>\n\
+            </div>\n\
+        </div>\n\
+    </section>\n\
+        ');
+    }
+}
 
 var medios ={
 
@@ -588,11 +764,11 @@ var medios ={
         $( "#modal-login" ).show( 'slide' );
     },
     electronicos:function(){
-        $('#title').html('').append('Monitoreo de Noticias Medios Eléctronicos');
+        $('#title').html('').html('<span>Monitoreo de Noticias Medios Eléctronicos</span>');
         $('#body').html('').css({
                             'background-color': '#3e6571',
                             'color': 'white'
-                            }).html('<li>\n\
+                            }).html('<ol style="list-style-type: circle; padding-left: 2em;"><li >\n\
                                      Publicación en página web personalizada de la totalidad de información transmitida con los audios y videos originales dentro de los 5 minutos siguientes al término de la nota.\n\
                                     </li>\n\
                                     <li>\n\
@@ -621,8 +797,8 @@ var medios ={
                                     </li>\n\
                                      <li>\n\
                                      Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
-                                    </li>\n\
-                                    <p><strong>COBERTURA.</strong> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
+                                    </li></ol>\n\
+                                    <p><span class="title-bold">COBERTURA.</span> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
                                     ' );
         $('#footer').html('');
         $('#myModal2').modal('show');
@@ -682,7 +858,7 @@ var medios ={
         $('#body').html('').css({
                                 'background-color': '#3e6571',
                                 'color': 'white'
-                            }).html('<li>\n\
+                            }).html('<ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
                                     Acceso a página web con posibilidad de navegar sin abandonar la propia aplicación.\n\
                                     </li>\n\
                                     <li>\n\
@@ -705,7 +881,7 @@ var medios ={
                                     </li>\n\
                                     <li>\n\
                                      Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad. \n\
-                                    </li>\n\
+                                    </li></ol>\n\
                                     '+map);
         $('#footer').html('');
         $('#myModal2').modal('show');
@@ -757,7 +933,7 @@ console.log(screen.width);
                                 'color': 'white'
                             }).html('<p>\n\
                                     Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
-                                    </p>\n\
+                                    </p><ol style="list-style-type: circle; padding-left: 2em;">\n\
                                     <li>\n\
                                      Monitoreo simultaneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza.\n\
                                     </li>\n\
@@ -784,7 +960,7 @@ console.log(screen.width);
                                     </li>\n\
                                      <li>\n\
                                      Grabación en audio -24 horas- de transmisión de emisoras.\n\
-                                    </li>\n\
+                                    </li></ol>\n\
                                     '+map);
         $('#footer').html('');
         $('#myModal2').modal('show');
@@ -800,7 +976,7 @@ console.log(screen.width);
                                     <p>Beneficios: Tener un panorama claro del impacto que tienen cada una de las cuentas monitoreadas en tweeter, así como los usuarios que están en contacto con ellas constantemente y las palabras más utilizadas alrededor de estos temas.</p>\n\
                                     </p>\n\
                                     <p><strong>Características</strong></p>\n\
-                                    <li>\n\
+                                    <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
                                      Seguimiento personalizado las 24 horas del día por cuenta monitoreada\n\
                                     </li>\n\
                                     <li>\n\
@@ -817,7 +993,7 @@ console.log(screen.width);
                                     </li>\n\
                                     <li>\n\
                                      Entrega mensual de Cd conteniendo los reportes del periodo.\n\
-                                    </li>\n\
+                                    </li></ol>\n\
                                     ');
         $('#footer').html('');
         $('#myModal2').modal('show');
@@ -832,7 +1008,7 @@ console.log(screen.width);
                                     </p>\n\
                                     <p>Acceso a página web con posibilidad de navegar desde los dispositivos antes señalados, sin necesidad de abandonar la propia aplicación.</p>\n\
                                     <p>Generación de Gráficos y Reportes Ejecutivos “en línea” considerando los parámetros siguientes:</p>\n\
-                                    <li>\n\
+                                    <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
                                      Reporte gráfico sobre el análisis cuantitativo, cualitativo y tiempo asignado a las noticias sobre los temas y/o personajes monitoreados, hasta 30 días anteriores.\n\
                                     </li>\n\
                                     <li>\n\
@@ -852,7 +1028,7 @@ console.log(screen.width);
                                     </li>\n\
                                     <li>\n\
                                      Calificación y número de menciones por sistema informativo.\n\
-                                    </li>\n\
+                                    </li></ol>\n\
                                     ');
         $('#footer').html('');
         $('#myModal2').modal('show');
