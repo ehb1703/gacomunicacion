@@ -31,6 +31,14 @@
    /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
   /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
 }
+@font-face
+{
+   font-family: "AvenirIt";
+   src: url("../fonts/AvenirNextLTPro-It.otf?#iefix");
+   font-style: 'Italic';
+   /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
+  /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
+}
 
 
 /*================================
@@ -426,7 +434,7 @@ footer a, footer a:hover {
       margin-left: 19%;
   }
   .info-text {
-     font-family: "AvenirPersonalizada";
+     font-family: "AvenirIt";
     font-size: 14px;
     color: #646466;
     line-height: 7px;
@@ -592,7 +600,7 @@ footer a, footer a:hover {
   }
 
   .info-text{
-  font-family: "AvenirPersonalizada";
+  font-family: "AvenirIt";
   font-size: 18;
   color: #646466;
   line-height: 10px;
@@ -767,7 +775,7 @@ footer a, footer a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  height: 100%;
+  /*height: 100%;*/
 }
 #sub-client{
   background-color: rgba(0,78,96,0.70);
@@ -804,7 +812,7 @@ footer a, footer a:hover {
   padding-top: 5%;
 }
 #cliente{
-  padding-top: 1%;
+  padding-top: 5%;
 }
 
 /*Eventos*/

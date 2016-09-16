@@ -116,7 +116,7 @@ var Page ={
                     </div>\n\
                 </div>\n\
                  <div class="row" id="login-modal-col">\n\
-                    <div id="login-modal" class="row" >\n\
+                    <div id="login-modal" class="col-md-6 col-sm-offset-2 col-sm-8 col-xs-12" >\n\
                           <div class="modal-content" >\n\
                             <div class="modal-body">\n\
                                 <h4 class="modal-title">Acceso a clientes</h4>\n\
@@ -301,72 +301,80 @@ var Page ={
                     </div>  \n\
                 </div>\n\
                  <div class="row" id="clientes1">\n\
-                    <div class="col-md-2 col-sm-6" >\n\
+                    <div class="col-md-offset-1  col-md-2 col-sm-6" >\n\
                         <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
                     </div>\n\
                     <div class="col-md-2 col-sm-6">\n\
                     <img class="img-responsive" src="img/SEGOB.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                          <img class="img-responsive" src="img/CONAGUA.png"/>\n\
                     </div> \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                          <img class="img-responsive" src="img/CONADIC.png"/>\n\
                     </div>\n\
-                    <div class="col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6 ">\n\
                         <img class="img-responsive" src="img/COFEPRIS.png"/>\n\
                     </div>     \n\
+                     <div class="col-md-1 col-sm-6">\n\
+                    </div>\n\
                 </div>\n\
                 <div class="row" id="clientes1">\n\
-                    <div class="col-md-2 col-sm-6">\n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/PEMEX.png"/>\n\
                     </div>\n\
                     <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/SENADO.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/CONAGO.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/JALISCO.png"/>\n\
                     </div>  \n\
                     <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/SONORA.png"/>\n\
                     </div> \n\
+                     <div class="col-md-1 col-sm-6">\n\
+                    </div>\n\
                 </div>\n\
                 <div class="row" id="clientes1">\n\
-                    <div class="col-md-2 col-sm-6">\n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/EDOMEX.png"/>\n\
                     </div>\n\
                     <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/SEDESA.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/BANAMEX.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/MVS.png"/>\n\
                     </div>  \n\
                     <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/AEROMEXICO.png"/>\n\
                     </div> \n\
+                    <div class="col-md-1 col-sm-6">\n\
+                    </div>\n\
                 </div>\n\
                 <div class="row" id="clientes2">\n\
-                    <div class="col-md-2 col-sm-6">\n\
+                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/SAMBORNS.png"/>\n\
                     </div>\n\
                     <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/MONTEPIO.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/PLACENCIA.png"/>\n\
                     </div>  \n\
-                    <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
+                    <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/UNIVA.png"/>\n\
                     </div>  \n\
                     <div class="col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/QUICKLEARNING.png"/>\n\
                     </div> \n\
+                     <div class="col-md-1 col-sm-6">\n\
+                    </div>\n\
                 </div>\n\
             </div>\n\
             </div>\n\
@@ -383,24 +391,24 @@ var Page ={
             </div>\n\
         </div>\n\
         <div class="row" id="row-contact">\n\
-            <div class="col-md-8">\n\
-            <div class="row" id="text-area">\n\
-                <div class="col-md-9" id="presentacion">\n\
-                <p class="info-text">Para nosotros es muy importante tu opinión.</p>\n\
-                <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>\n\
-                <p class="gacom">G.A. Comunicación, SC.</p>\n\
-                <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
-                <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
-                <a href="tel:5553739889">(55) 5373 9889</a></p>\n\
-                <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
-            </div>\n\
-             <div class="col-md-3" >\n\
-                    <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
-            </div>\n\
-            </div>\n\
+            <div class="col-md-9 col-sm-9">\n\
+                <div class="row" id="text-area">\n\
+                    <div class="col-md-9 col-sm-9" id="presentacion">\n\
+                    <p class="info-text">Para nosotros es muy importante tu opinión.</p>\n\
+                    <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>\n\
+                    <p class="gacom">G.A. Comunicación, SC.</p>\n\
+                    <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
+                    <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
+                    <a href="tel:5553739889">(55) 5373 9889</a>\n\
+                    <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
+                </div>\n\
+                 <div class="col-md-3 col-sm-3" >\n\
+                        <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
+                </div>\n\
             </div>\n\
         </div>\n\
-    </section>\n\
+    </div>\n\
+</section>\n\
         ');
     }
 }
