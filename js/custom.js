@@ -83,9 +83,9 @@ $(document).ready(function () {
         return false;
     }
 });
- function tooltipHtml(n, d, e){ /* FUNCION PARA MOSTRAR EL NOMBRE DEL ESTADO EN EL MAPA :s */
-                                    return "<h4>"+n+ " ("+e+") Emisoras</h4>";
-                        }
+ function tooltipHtml(n, d){ /* FUNCION PARA MOSTRAR EL NOMBRE DEL ESTADO EN EL MAPA :s */
+            return "<div id='tooltip-container'>"+n+ " ("+d+") Emisoras</div>";
+}
  function tooltipHtml_impresos(n, d, e, m){ /* FUNCION PARA MOSTRAR EL NOMBRE DEL ESTADO EN EL MAPA :s */
             return "<h4>"+n+ " ("+m+") Medios</h4>";
 }
@@ -906,7 +906,7 @@ console.log(screen.width);
                     <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
                 </div>\n\
             </div>\n\
-        </section>';
+        </section> <div id="table-map" class="row"></div> ';
 
  }else{
      map += '<div class="col-md-12" id="cobertura-list">\n\
