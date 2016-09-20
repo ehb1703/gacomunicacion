@@ -1131,7 +1131,7 @@ var load = function( state, option ) {
             d3.select("#tooltip").transition().duration(200).style("opacity", .9);      
             d3.select("#tooltip-container").html(toolTip(d.name, d.totalE))  
                 .style("left", (d3.event.pageX- 200) + "px")     
-                .style("top", (d3.event.pageY - 600) + "px")
+                .style("top", (d3.event.pageY - 650) + "px")
                 .style("z-index", 1000);
             $('#tooltip-container').append(d.name).css('display','block');
         }
