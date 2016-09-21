@@ -1164,7 +1164,7 @@ var load = function( state, option ) {
         d3.call(tip);    
         */
 
-        d3.select(id).selectAll("image")
+       /* d3.select(id).selectAll("image")
           .data(places)
           .enter().append("svg:image")
           .attr('x',-9)
@@ -1180,7 +1180,7 @@ var load = function( state, option ) {
             ]) + ")";
           })
           .style("fill", function(d){ return d.color; } )
-          .on("mouseover", mouseOverP).on("mouseout", mouseOutP).on("click", clickP);
+          .on("mouseover", mouseOverP).on("mouseout", mouseOutP).on("click", clickP);*/
            // .on('click', tip.hide);
 
 	}

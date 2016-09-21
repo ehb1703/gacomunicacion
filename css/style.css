@@ -351,6 +351,11 @@ footer a, footer a:hover {
   margin: auto;
   padding-top: 3%;
 }
+  #services2-row img{
+  width: 60%;
+  margin: auto;
+  padding-top: 3%;
+}
 #home-row {
   background-image: url('../img/FONDO2.png');
   background-repeat: no-repeat;
@@ -393,6 +398,9 @@ footer a, footer a:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   text-align: center;
 }
+.titulo-text{
+      font-family: 'AvenirBold';
+    }
 #text-divs{
   color: #002E3C;
   font-size: 18;
@@ -513,7 +521,12 @@ footer a, footer a:hover {
     padding-top: 6.5%;
   }
   #services-row img{
-  width: 85%;
+  width: 60%;
+  margin: auto;
+  padding-top: 3%;
+}
+ #services2-row img{
+  width: 60%;
   margin: auto;
   padding-top: 3%;
 }
@@ -532,7 +545,7 @@ footer a, footer a:hover {
   font-weight: 100;
 }
 #indice-clientes{
-  padding-top: 4%;
+  padding-top: 2%;
 }
   #logo-img {
     width: 60%;
@@ -576,14 +589,17 @@ footer a, footer a:hover {
     display:'none';
   }
   #services-row{
-    padding-top: 12%;
-    padding-bottom: 14%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
     #intro-div{
       border-left: 1px solid #104b5c;
       border-right: 1px solid #104b5c;
       border-bottom: none;
       border-top: none;
+    }
+    .titulo-text{
+      font-family: 'AvenirBold';
     }
     #cobertura-list{
       display: none;
@@ -722,7 +738,7 @@ footer a, footer a:hover {
   background-repeat: no-repeat;
   background-size: 100%;
   position: relative;
-  height: 70%;
+  height: 57%;
 }
 .row{
   margin-right: 0px; 
@@ -839,7 +855,7 @@ footer a, footer a:hover {
   padding-top: 5%;
 }
 #services{
-  padding-top: 5%;
+  padding-top: 1%;
 }
 #cliente{
   padding-top: 5%;

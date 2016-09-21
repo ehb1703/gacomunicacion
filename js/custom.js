@@ -134,13 +134,13 @@ var Page ={
     </div>\n\
     <div class="row" id="text-divs"> \n\
                     <div class="col-md-6" id="intro-div">\n\
-                        <h3 class="text-left" >VISIÓN</h3>\n\
+                        <h3 class="text-center titulo-text" >VISIÓN</h3>\n\
                         <p>\n\
                            Proyectar a GA Comunicación como empresa líder, competitiva y rentable en el monitoreo y análisis de información mediática; enfrentamos los retos de manera innovadora, aprovechando con actitud, la experiencia y fortaleza de cada uno de nuestros colaboradores, para generar una respuesta eficaz con información estratégica, oportuna y de calidad.\n\
                         </p>\n\
                     </div>\n\
                      <div class="col-md-6" id="intro-div-2">\n\
-                        <h3 class="text-right" >MISIÓN</h3>\n\
+                        <h3 class="text-center titulo-text" >MISIÓN</h3>\n\
                         <p>\n\
                             Informar real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.\n\
                         </p>\n\
@@ -222,7 +222,7 @@ var Page ={
             <div class="row" id="text-area">\n\
                 <div class="col-md-9" id="presentacion">\n\
                 <p class="info-text">Para nosotros es muy importante tu opinión.</p>\n\
-                <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>\n\
+                <p class="info-text">Agradeceremos todos tus comentarios y sugerencias.</p>\n\
                 <p class="gacom">G.A. Comunicación, SC.</p>\n\
                 <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
                 <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
@@ -273,13 +273,13 @@ var Page ={
     </div>\n\
     <div class="row" id="text-divs"> \n\
                     <div class="col-md-6" id="intro-div">\n\
-                        <h3 class="text-left" >VISIÓN</h3>\n\
+                        <h3 class="text-center titulo-text" >VISIÓN</h3>\n\
                         <p>\n\
                            Proyectar a GA Comunicación como empresa líder, competitiva y rentable en el monitoreo y análisis de información mediática; enfrentamos los retos de manera innovadora, aprovechando con actitud, la experiencia y fortaleza de cada uno de nuestros colaboradores, para generar una respuesta eficaz con información estratégica, oportuna y de calidad.\n\
                         </p>\n\
                     </div>\n\
                      <div class="col-md-6" id="intro-div-2">\n\
-                        <h3 class="text-right" >MISIÓN</h3>\n\
+                        <h3 class="text-center titulo-text" >MISIÓN</h3>\n\
                         <p>\n\
                             Informar real, objetiva y oportunamente los sucesos y acontecimientos difundidos en los medios de comunicación, con el objetivo de proporcionar productos con la información necesaria y especializada que sirva para fortalecer la toma de decisiones.\n\
                         </p>\n\
@@ -296,8 +296,8 @@ var Page ={
                     </div>  \n\
                 </div>\n\
                 <div class="row" >\n\
-                    <div id="indice-clientes2" class="col-md-offset-4 col-md-4">\n\
-                         <img class="img-responsive" src="img/CLIENTES 2.png"/>\n\
+                    <div id="indice-clientes2" class="col-md-12">\n\
+                         <img class="img-responsive" src="img/CLIENTES 2.png" style="width:299px;height:70px;margin:auto"/>\n\
                     </div>  \n\
                 </div>\n\
                  <div class="row" id="clientes1">\n\
@@ -391,21 +391,23 @@ var Page ={
             </div>\n\
         </div>\n\
         <div class="row" id="row-contact">\n\
-            <div class="col-md-9 col-sm-9">\n\
+            <div class="col-md-6 col-sm-6">\n\
                 <div class="row" id="text-area">\n\
-                    <div class="col-md-9 col-sm-9" id="presentacion">\n\
+                    <div class="col-md-12 col-sm-9" id="presentacion">\n\
                     <p class="info-text">Para nosotros es muy importante tu opinión.</p>\n\
-                    <p class="info-text">Agradeceremos todos tus comentarios y sugerencias</p>\n\
+                    <p class="info-text">Agradeceremos todos tus comentarios y sugerencias.</p>\n\
                     <p class="gacom">G.A. Comunicación, SC.</p>\n\
                     <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
                     <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
                     <a href="tel:5553739889">(55) 5373 9889</a>\n\
                     <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
                 </div>\n\
-                 <div class="col-md-3 col-sm-3" >\n\
-                        <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
-                </div>\n\
             </div>\n\
+        </div>\n\
+        <div class="col-md-1 col-sm-1" >\n\
+        </div>\n\
+        <div class="col-md-2 col-sm-2" >\n\
+                <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
         </div>\n\
     </div>\n\
 </section>\n\
@@ -772,7 +774,7 @@ var medios ={
         $( "#modal-login" ).show( 'slide' );
     },
     electronicos:function(){
-        $('#title').html('').html('<span>Monitoreo de Noticias Medios Eléctronicos</span>');
+        $('#title').html('').html('<div class="text-center">Monitoreo de Noticias Medios Eléctronicos</div>');
         $('#body').html('').css({
                             'background-color': '#3e6571',
                             'color': 'white'
@@ -805,7 +807,7 @@ var medios ={
                                     </li>\n\
                                      <li>\n\
                                      Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
-                                    </li></ol>\n\
+                                    </li></ol><br>\n\
                                     <p><span class="title-bold">COBERTURA.</span> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
                                     ' );
         $('#footer').html('');
@@ -862,7 +864,7 @@ var medios ={
                 </ul> \n\
             </div>';
  }
-        $('#title').html('').append('Monitoreo de Noticias Medios Impresos');
+        $('#title').html('').append('<div class="text-center">Monitoreo de Noticias Medios Impresos</div>');
         $('#body').html('').css({
                                 'background-color': '#3e6571',
                                 'color': 'white'
@@ -873,7 +875,7 @@ var medios ={
                                      Consulta de testigos originales (texto e imagen).\n\
                                     </li>\n\
                                     <li>\n\
-                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 Revistas y principales Portales en Internet. La revisión de diarios se realiza sobre la <strong>PUBLICACIÓN ORIGINAL IMPRESA</strong> -no versiones en internet-.\n\
+                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 Revistas y principales Portales en Internet. La revisión de diarios se realiza sobre la publicación original impresa -no versiones en internet-.\n\
                                     </li>\n\
                                     <li>\n\
                                      Envío de documento PDF por correo electrónico a las 6:30 horas de diarios de la CDMX, a las 8:30 horas del resto de los estados y publicación en página web desde las 00:30 horas.\n\
@@ -889,7 +891,7 @@ var medios ={
                                     </li>\n\
                                     <li>\n\
                                      Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad. \n\
-                                    </li></ol>\n\
+                                    </li></ol><br>\n\
                                     '+map);
         $('#footer').html('');
         $('#myModal2').modal('show');
@@ -935,7 +937,7 @@ console.log(screen.width);
                 </ul> \n\
             </div>';
  }
-        $('#title').html('').append('Monitoreo de Campañas (Spots)');
+        $('#title').html('').append('<div class="text-center">Monitoreo de Campañas (Spots)</div>');
         $('#body').html('').css({
                                 'background-color': '#3e6571',
                                 'color': 'white'
@@ -968,14 +970,14 @@ console.log(screen.width);
                                     </li>\n\
                                      <li>\n\
                                      Grabación en audio -24 horas- de transmisión de emisoras.\n\
-                                    </li></ol>\n\
+                                    </li></ol><br><br>\n\
                                     '+map);
         $('#footer').html('');
         $('#myModal2').modal('show');
          uStates.draw("#statesvg", sampleData, tooltipHtml);
     },
      redes:function(){
-        $('#title').html('').append('Monitoreo de Redes Sociales');
+        $('#title').html('').append('<div class="text-center">Monitoreo de Redes Sociales</div>');
         $('#body').html('').css({
                                     'background-color': '#3e6571',
                                     'color': 'white'
@@ -1007,7 +1009,7 @@ console.log(screen.width);
         $('#myModal2').modal('show');
     },
      app:function(){
-        $('#title').html('').append('Aplicación para Dispositivos Móviles');
+        $('#title').html('').append('<div class="text-center">Aplicación para Dispositivos Móviles</div>');
         $('#body').html('').css({
                                 'background-color': '#3e6571',
                                 'color': 'white'
