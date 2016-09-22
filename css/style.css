@@ -557,7 +557,9 @@ footer a, footer a:hover {
     padding-bottom: 0px;
   }
   #table-map{
-    height: 300px;
+    position: absolute;
+    top: 25%;
+    right: 6%;
   }
   #titulo-map{
     color: white;
@@ -568,7 +570,7 @@ footer a, footer a:hover {
   }
   #titulo-map-div{
     background-color: #0d404f;
-    padding: 10px;
+    /*padding: 10px;*/
     box-shadow: 4px 4px 5px 0 black;
   }
 
@@ -620,6 +622,7 @@ footer a, footer a:hover {
     margin-right: 0px;
     margin-bottom: -5px;
     font-size: 29px;
+    font-family: 'AvenirBold';
   }
 
   /* Informacion de Contacto y Dirección de la Empresa */
@@ -924,7 +927,9 @@ footer a, footer a:hover {
   color: white;
 }
 #mail{
-  padding-top: 1%;
+  color: #2385a1;
+  font-family: 'AvenirIt';
+  font-size: 15px;
 }
 #myModal2 .modal-body{
   font-family: "AvenirPersonalizada";

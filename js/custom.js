@@ -226,8 +226,8 @@ var Page ={
                 <p class="gacom">G.A. Comunicación, SC.</p>\n\
                 <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
                 <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
-                <a href="tel:5553739889">(55) 5373 9889</a></p>\n\
-                <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
+                <a style="color:#2385a1" href="tel:5553739889">(55) 5373 9889</a></p>\n\
+                <p id="mail" class="info-text"><strong></strong> <a style="color:#2385a1" href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
             </div>\n\
              <div class="col-md-3" >\n\
                     <img src="img/GAlogoSINfondo.png" class="img-responsive" id="logo">\n\
@@ -399,8 +399,8 @@ var Page ={
                     <p class="gacom">G.A. Comunicación, SC.</p>\n\
                     <p class="info-address">La Capilla No. 86, Los Pastores</p>\n\
                     <p class="info-address">Naucalpan, Estado de México C.P. 53340</p>\n\
-                    <a href="tel:5553739889">(55) 5373 9889</a>\n\
-                    <p id="mail" class="info-text"><strong></strong> <a href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
+                    <a style="color:#2385a1" href="tel:5553739889">(55) 5373 9889</a>\n\
+                    <p  id="mail" class="info-text"><strong></strong> <a style="color:#2385a1" href="mailto:contacto@gacomunicacion.com">contacto@gacomunicacion.com</a></p>\n\
                 </div>\n\
             </div>\n\
         </div>\n\
@@ -875,13 +875,13 @@ var medios ={
                                      Consulta de testigos originales (texto e imagen).\n\
                                     </li>\n\
                                     <li>\n\
-                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 Revistas y principales Portales en Internet. La revisión de diarios se realiza sobre la publicación original impresa -no versiones en internet-.\n\
+                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 revistas y principales portales en internet. La revisión de diarios se realiza sobre la publicación original impresa -no versiones en internet-.\n\
                                     </li>\n\
                                     <li>\n\
                                      Envío de documento PDF por correo electrónico a las 6:30 horas de diarios de la CDMX, a las 8:30 horas del resto de los estados y publicación en página web desde las 00:30 horas.\n\
                                     </li>\n\
                                     <li>\n\
-                                     Reporte Gráfico Cuantitativo con el número de publicaciones por categoría (Primeras Planas, Columnas, Cartones, etc), analizando la información por fecha y personaje con consulta histórica. \n\
+                                     Reporte gráfico cuantitativo con el número de publicaciones por categoría (primeras planas, columnas, cartones, etc), analizando la información por fecha y personaje con consulta histórica. \n\
                                     </li>\n\
                                     <li>\n\
                                     Número de publicaciones diarias por periódico.\n\
@@ -903,12 +903,13 @@ console.log(screen.width);
  if(screen.width > 990){
      map += '<section class="content map-iframe" >\n\
             <div class="box box-solid">\n\
-                <div id="map">\n\
+                <div id="map" style="position:relative">\n\
                     <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
                     <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
+                    <div id="table-map" class="row">aki</div>\n\
                 </div>\n\
             </div>\n\
-        </section> <div id="table-map" class="row"></div> ';
+        </section>  ';
 
  }else{
      map += '<div class="col-md-12" id="cobertura-list">\n\
@@ -945,13 +946,13 @@ console.log(screen.width);
                                     Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
                                     </p><ol style="list-style-type: circle; padding-left: 2em;">\n\
                                     <li>\n\
-                                     Monitoreo simultaneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza.\n\
+                                     Monitoreo simultáneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza.\n\
                                     </li>\n\
                                     <li>\n\
                                      Reconocimiento de emisiones en 3 segundos.\n\
                                     </li>\n\
                                     <li>\n\
-                                     “Testigo” auditivo de la transmisión original (3 segundos previos y posteriores al spot auditado)\n\
+                                     “Testigo” auditivo de la transmisión original (3 segundos previos y posteriores al spot auditado).\n\
                                     </li>\n\
                                     <li>\n\
                                      Generación de información, reportes y gráficos “en línea”.\n\
@@ -969,7 +970,7 @@ console.log(screen.width);
                                      Posibilidad de realizar “búsquedas históricas” de información. \n\
                                     </li>\n\
                                      <li>\n\
-                                     Grabación en audio -24 horas- de transmisión de emisoras.\n\
+                                     Grabación en audio (24 horas) de transmisión de emisoras.\n\
                                     </li></ol><br><br>\n\
                                     '+map);
         $('#footer').html('');
@@ -982,7 +983,7 @@ console.log(screen.width);
                                     'background-color': '#3e6571',
                                     'color': 'white'
                                 }).html('<p>\n\
-                                    Servicio que tiene como objetivo monitorear la tendencia de los textos vinculados con los temas o personajes de interés, y que son emitidos dentro de redes sociales (Twitter). Este servicio pretende dar seguimiento a las cuentas de tweeter indicadas, mostrando el número de tweets, alcance, impactos, actividad de las cuentas, términos destacados alrededor de estas cuentas, cuentas, hashtags, tweets e imágenes destacadas.\n\
+                                    Servicio que tiene como objetivo monitorear la tendencia de los textos vinculados con los temas o personajes de interés, y que son emitidos dentro de redes sociales (Twitter). Este servicio pretende dar seguimiento a las cuentas de tweeter indicadas, mostrando el número de tweets, alcance, impactos, actividad de las cuentas, términos destacados alrededor de estas cuentas: cuentas, hashtags, tweets e imágenes destacadas.\n\
                                     <p>Beneficios: Tener un panorama claro del impacto que tienen cada una de las cuentas monitoreadas en tweeter, así como los usuarios que están en contacto con ellas constantemente y las palabras más utilizadas alrededor de estos temas.</p>\n\
                                     </p>\n\
                                     <p><strong>Características</strong></p>\n\
@@ -1017,7 +1018,7 @@ console.log(screen.width);
                                     Independientemente de página web para consulta de información y “alertas informativas”, se cuenta con una aplicación para dispositivos móviles (iPad / iPhone).\n\
                                     </p>\n\
                                     <p>Acceso a página web con posibilidad de navegar desde los dispositivos antes señalados, sin necesidad de abandonar la propia aplicación.</p>\n\
-                                    <p>Generación de Gráficos y Reportes Ejecutivos “en línea” considerando los parámetros siguientes:</p>\n\
+                                    <p>Generación de gráficos y reportes ejecutivos “en línea” considerando los parámetros siguientes:</p>\n\
                                     <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
                                      Reporte gráfico sobre el análisis cuantitativo, cualitativo y tiempo asignado a las noticias sobre los temas y/o personajes monitoreados, hasta 30 días anteriores.\n\
                                     </li>\n\
@@ -1034,7 +1035,7 @@ console.log(screen.width);
                                     Ubicación de las notas.\n\
                                     </li>\n\
                                     <li>\n\
-                                     Reporte de Tendencia Informativa (Comportamiento histórico de la información –mensual, quincenal, semanal o diario-).\n\
+                                     Reporte de tendencia informativa (Comportamiento histórico de la información –mensual, quincenal, semanal o diario-).\n\
                                     </li>\n\
                                     <li>\n\
                                      Calificación y número de menciones por sistema informativo.\n\
