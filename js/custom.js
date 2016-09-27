@@ -92,6 +92,7 @@ $(document).ready(function () {
 
 
 
+var map;
 
 var sampleData ={};
             [ "SN", "VZ", "CHP", "OAX", "GRO", "TAB", "MIC", "PUE", "MOR", "EMX", "COL", "CAM", "JAL", "DF", "TLA", "HID",
@@ -292,15 +293,15 @@ var Page ={
             <div id="sub-client">\n\
                 <div class="row" >\n\
                     <div id="indice-clientes" class="col-md-12">\n\
-                         <img class="img-responsive" src="img/PLECAmarcas.png"/>\n\
+                         <img class="img-responsive" src="img/PLECAmarcas.png" />\n\
                     </div>  \n\
                 </div>\n\
                 <div class="row" >\n\
                     <div id="indice-clientes2" class="col-md-12">\n\
-                         <img class="img-responsive" src="img/CLIENTES 2.png" style="width:299px;height:70px;margin:auto"/>\n\
+                         <img class="img-responsive header-cobertura" src="img/CLIENTES 2.png" />\n\
                     </div>  \n\
                 </div>\n\
-                 <div class="row" id="clientes1">\n\
+                 <div class="row" id="clientes1" style="padding-top:2%">\n\
                     <div class="col-md-offset-1  col-md-2 col-sm-6" >\n\
                         <img class="img-responsive" src="img/PRESIDENCIA.png"/>\n\
                     </div>\n\
@@ -357,7 +358,7 @@ var Page ={
                     <div class="col-md-1 col-sm-6">\n\
                     </div>\n\
                 </div>\n\
-                <div class="row" id="clientes2">\n\
+                <div class="row" id="clientes2" style="padding-bottom:7%;">\n\
                     <div class="col-md-offset-1 col-md-2 col-sm-6">\n\
                         <img class="img-responsive" src="img/SAMBORNS.png"/>\n\
                     </div>\n\
@@ -812,22 +813,23 @@ var medios ={
                                     ' );
         $('#footer').html('');
         $('#myModal2').modal('show');
+
        //  uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
     },
     impresos:function(){
-        var map='';
+        var maps='';
  if(screen.width > 990){
-     map += '<section class="content map-iframe" >\n\
-            <div class="box box-solid">\n\
-                <div id="map">\n\
-                    <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
-                    <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
+     maps += '<section class="content map-iframe" >\n\
+                <div class="box box-solid">\n\
+                    <div id="map_canvas" >\n\
+                    </div>\n\
                 </div>\n\
-            </div>\n\
-        </section>';
+            </section>';
+
+ 
 
  }else{
-     map += '<div class="col-md-12" id="cobertura-list">\n\
+     maps += '<div class="col-md-12" id="cobertura-list">\n\
                <ul class="list-group">\n\
                   <li id="9" class="list-group-item">30 CDMX</li>\n\
                   <li id="15" class="list-group-item">2 &nbsp&nbspAguascalientes</li>\n\
@@ -892,27 +894,30 @@ var medios ={
                                     <li>\n\
                                      Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad. \n\
                                     </li></ol><br>\n\
-                                    '+map);
+                                    '+maps);
         $('#footer').html('');
         $('#myModal2').modal('show');
-         uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
+         medios.initMap();
+        //L.mapbox.accessToken = 'pk.eyJ1IjoicmNhc3RpbGxvYWd1aXJyIiwiYSI6ImNpbDFrdmM2bTM2bnd1YW0zYjZ2dTc2OG4ifQ._HEJ9An2hZK2ofuMNEFdMA';
+        //var map = L.mapbox.map('map_canvas','mapbox.streets').setView([19.432608, -99.133208],6);
+         //uStates2.draw2("#statesvg", sampleData, tooltipHtml);
     },
     campanas:function(){
-var map='';
+var maps='';
 console.log(screen.width);
  if(screen.width > 990){
-     map += '<section class="content map-iframe" >\n\
+     maps += '<section class="content map-iframe" >\n\
             <div class="box box-solid">\n\
                 <div id="map" style="position:relative">\n\
                     <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
                     <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
-                    <div id="table-map" class="row">aki</div>\n\
+                    <div id="table-map" class="row"></div>\n\
                 </div>\n\
             </div>\n\
         </section>  ';
 
  }else{
-     map += '<div class="col-md-12" id="cobertura-list">\n\
+     maps += '<div class="col-md-12" id="cobertura-list">\n\
                <ul class="list-group">\n\
                   <li id="9" class="list-group-item">63 CDMX</li>\n\
                   <li id="15" class="list-group-item">44 Cable</li>\n\
@@ -972,7 +977,7 @@ console.log(screen.width);
                                      <li>\n\
                                      Grabación en audio (24 horas) de transmisión de emisoras.\n\
                                     </li></ol><br><br>\n\
-                                    '+map);
+                                    '+maps);
         $('#footer').html('');
         $('#myModal2').modal('show');
          uStates.draw("#statesvg", sampleData, tooltipHtml);
@@ -1044,5 +1049,11 @@ console.log(screen.width);
         $('#footer').html('');
         $('#myModal2').modal('show');
     },
+     initMap:function() {
+          map = new google.maps.Map(document.getElementById('map_canvas'), {
+            center: {lat: 19.432608, lng: -99.133208},
+            zoom: 5
+          });
+        }
     
 }
