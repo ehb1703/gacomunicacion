@@ -1062,6 +1062,7 @@ console.log(screen.width);
         $.ajax({
             url:'http://187.247.253.5/external/services/mail/Classes/Cobertura.php',
             type:'GET',
+            crossDomain: true,
             dataType:'json',
             success:function(resp){
              console.log(resp);

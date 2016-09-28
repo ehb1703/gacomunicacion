@@ -18,26 +18,34 @@
 @font-face
 {
    font-family: "AvenirPersonalizada";
-   src: url("../fonts/AvenirNextLTPro-Regular.otf?#iefix");
-   /*font-style: 'Italic';*/
-   /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
-  /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
+   src: url("../fonts/AvenirNextLTPro-Regular.otf");
 }
 @font-face
 {
    font-family: "AvenirBold";
-   src: url("../fonts/AvenirNextLTPro-Bold.otf?#iefix");
-   /*font-style: 'Italic';*/
-   /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
-  /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
+   src: url("../fonts/AvenirNextLTPro-Bold.otf");
 }
 @font-face
 {
    font-family: "AvenirIt";
-   src: url("../fonts/AvenirNextLTPro-It.otf?#iefix");
+   src: url("../fonts/AvenirNextLTPro-It.otf");
    font-style: 'Italic';
-   /*src: url('../fonts/AvenirNextLTPro-BoldIt.eot'); /* IE9 Compat Modes*/ 
-  /* src: url('../fonts/AvenirNextLTPro-BoldIt.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */         
+}
+@font-face
+{
+   font-family: "AvenirPersonalizada_IE";
+   src: url("../fonts/AvenirNextLTPro-Regular.eot");
+}
+@font-face
+{
+   font-family: "AvenirBold_IE";
+   src: url("../fonts/AvenirNextLTPro-Bold.eot");
+}
+@font-face
+{
+   font-family: "AvenirIt_IE";
+   src: url("../fonts/AvenirNextLTPro-It.eot");
+   font-style: 'Italic';
 }
 
 
@@ -45,7 +53,7 @@
     GENERAL STYLES
 ==================================*/
 body {
-    font-family: 'AvenirPersonalizada';
+    font-family: 'AvenirPersonalizada', 'AvenirPersonalizada_IE';
     width: 100%;
 }
 
@@ -399,7 +407,7 @@ footer a, footer a:hover {
   text-align: center;
 }
 .titulo-text{
-      font-family: 'AvenirBold';
+      font-family: 'AvenirBold', 'AvenirBold_IE ';
     }
 #text-divs{
   color: #002E3C;
@@ -442,7 +450,7 @@ footer a, footer a:hover {
       margin-left: 19%;
   }
   .info-text {
-     font-family: "AvenirIt";
+     font-family: "AvenirIt", "AvenirIt_IE";
     font-size: 14px;
     color: #646466;
     line-height: 7px;
@@ -572,7 +580,7 @@ footer a, footer a:hover {
   }
   #conteo-map{
     color: gray;
-    font-family: 'AvenirIt';
+    font-family: 'AvenirIt', 'AvenirIt_IE';
   }
   #titulo-map-div{
     background-color: #0d404f;
@@ -607,7 +615,7 @@ footer a, footer a:hover {
       border-top: none;
     }
     .titulo-text{
-      font-family: 'AvenirBold';
+      font-family: 'AvenirBold', 'AvenirBold_IE';
     }
     #cobertura-list{
       display: none;
@@ -628,7 +636,7 @@ footer a, footer a:hover {
     margin-right: 0px;
     margin-bottom: -5px;
     font-size: 29px;
-    font-family: 'AvenirBold';
+    font-family: 'AvenirBold', 'AvenirBold_IE';
   }
 
   /* Informacion de Contacto y Dirección de la Empresa */
@@ -655,7 +663,7 @@ footer a, footer a:hover {
   }
 
   .info-text{
-  font-family: "AvenirIt";
+  font-family: "AvenirIt", "AvenirIt_IE";
   font-size: 18;
   color: #646466;
   line-height: 10px;
@@ -758,7 +766,7 @@ footer a, footer a:hover {
   margin-top: 0px;
 }
 .textAv{
-  font-family: 'AvenirPersonalizada';
+  font-family: 'AvenirPersonalizada', 'AvenirPersonalizada_IE';
  /* src: url("http://www.yoursite.com/fonts/Avenir_Next.otf");*/
 }
 
@@ -936,23 +944,23 @@ footer a, footer a:hover {
 }
 #mail{
   color: #2385a1;
-  font-family: 'AvenirIt';
+  font-family: 'AvenirIt', 'AvenirIt_IE';
   font-size: 15px;
 }
 #myModal2 .modal-body{
-  font-family: "AvenirPersonalizada";
+  font-family: "AvenirPersonalizada", "AvenirPersonalizada_IE";
   padding: 15px;
   font-size: 16px;
 }
 #myModal2 #title{
-  font-family: "AvenirBold";
+  font-family: "AvenirBold", "AvenirBold_IE ";
   color: #5e5e5f;
 }
 #myModal2 ol li{
   padding-top: 15px;
 }
 .title-bold{
-  font-family: "AvenirBold";
+  font-family: "AvenirBold", "AvenirBold_IE";
 }
 .d3-tip {
         line-height: 1;
