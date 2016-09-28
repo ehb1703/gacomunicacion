@@ -821,11 +821,14 @@ var medios ={
         var maps='';
  if(screen.width > 990){
      maps += '<section class="content map-iframe" >\n\
-                <div class="box box-solid">\n\
-                    <div id="map_canvas" >\n\
-                    </div>\n\
+            <div class="box box-solid">\n\
+                <div id="map" style="position:relative">\n\
+                    <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
+                    <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
+                    <div id="table-map" class="row"></div>\n\
                 </div>\n\
-            </section>';
+            </div>\n\
+        </section> ';
 
  
 
@@ -871,7 +874,11 @@ var medios ={
         $('#body').html('').css({
                                 'background-color': '#3e6571',
                                 'color': 'white'
-                            }).html('<ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
+                            }).html('<p>\n\
+                                    Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
+                                    </p>\n\
+                                      '+maps+'  \n\
+                                    <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
                                     Acceso a página web con posibilidad de navegar sin abandonar la propia aplicación.\n\
                                     </li>\n\
                                     <li>\n\
@@ -895,11 +902,11 @@ var medios ={
                                     <li>\n\
                                      Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad. \n\
                                     </li></ol><br>\n\
-                                    '+maps);
+                                    ');
         $('#footer').html('');
         $('#myModal2').modal('show');
-         medios.initMap();
-
+        // medios.initMap();
+         uStates.draw("#statesvg", sampleData, tooltipHtml);
         //L.mapbox.accessToken = 'pk.eyJ1IjoicmNhc3RpbGxvYWd1aXJyIiwiYSI6ImNpbDFrdmM2bTM2bnd1YW0zYjZ2dTc2OG4ifQ._HEJ9An2hZK2ofuMNEFdMA';
         //var map = L.mapbox.map('map_canvas','mapbox.streets').setView([19.432608, -99.133208],6);
          //uStates2.draw2("#statesvg", sampleData, tooltipHtml);
@@ -1060,7 +1067,7 @@ console.log(screen.width);
     },
     points:function(){
         $.ajax({
-            url:'http://187.247.253.5/external/services/mail/Classes/Cobertura.php',
+            url:'http://localhost/external/mail/Classes/Cobertura.php',
             type:'GET',
             crossDomain: true,
             dataType:'json',
