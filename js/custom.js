@@ -1060,11 +1060,11 @@ console.log(screen.width);
     },
     points:function(){
         $.ajax({
-            url:'http://localhost/external/mail/Classes/Cobertura.php',
+            url:'http://187.247.253.5/external/services/mail/Classes/Cobertura.php',
             type:'GET',
             dataType:'json',
             success:function(resp){
-               // console.log(resp);
+             console.log(resp);
                var infowindow = new google.maps.InfoWindow();
 
                 var marker, i;
