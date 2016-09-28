@@ -817,6 +817,7 @@ var medios ={
        //  uStates.draw("#statesvg", sampleData, tooltipHtml_impresos);
     },
     impresos:function(){
+        medios.points();
         var maps='';
  if(screen.width > 990){
      maps += '<section class="content map-iframe" >\n\
@@ -898,6 +899,7 @@ var medios ={
         $('#footer').html('');
         $('#myModal2').modal('show');
          medios.initMap();
+
         //L.mapbox.accessToken = 'pk.eyJ1IjoicmNhc3RpbGxvYWd1aXJyIiwiYSI6ImNpbDFrdmM2bTM2bnd1YW0zYjZ2dTc2OG4ifQ._HEJ9An2hZK2ofuMNEFdMA';
         //var map = L.mapbox.map('map_canvas','mapbox.streets').setView([19.432608, -99.133208],6);
          //uStates2.draw2("#statesvg", sampleData, tooltipHtml);
@@ -1054,6 +1056,55 @@ console.log(screen.width);
             center: {lat: 19.432608, lng: -99.133208},
             zoom: 5
           });
-        }
+          
+    },
+    points:function(){
+        $.ajax({
+            url:'http://localhost/external/mail/Classes/Cobertura.php',
+            type:'GET',
+            dataType:'json',
+            success:function(resp){
+               // console.log(resp);
+               var infowindow = new google.maps.InfoWindow();
+
+                var marker, i;
+
+                $.each(resp, function(i, val){
+                     marker = new google.maps.Marker({
+                        position: new google.maps.LatLng(val.latitude, val.longitude),
+                        map: map
+                      });
+
+                      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                        return function() {
+                          var contenido = 'No hay periodicos disponibles.';
+
+                            if(val!='') {
+                                contenido = '<div style="width:270px; height:190px;overflow-y:auto;overflow-x: hidden;color:black">';
+                                $.each(val.data,function(index,portada){
+                                    contenido += '<div style="width:250px;display:block;overflow:hidden;border-radius: 1px solid silver;margin-bottom:4px;border-bottom:1px solid gray;color:black">';
+                                    contenido += '  <div style="width:70px;height:70px;float:left;"><img src="http://187.247.253.5/siscap.la/public/img/portadas/thumbs/thumb-'+portada.id+'.jpg" width="70px" height="70px"></div>';
+                                    contenido += '  <div style="width:177px;font-weight:bold;float:right;padding-left:3px;">'+portada.periodico+'</div>';
+                                    contenido += '  <div style="width:174px;float:right;padding:3px;font-size:12px;">'+(portada.titulo.length>30?portada.titulo.substring(0,30)+'...':portada.titulo)+'</div>';
+                                    contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><a class="btn btn-default btn-sm btn-gmap" target="blank" href="'+portada.pdf+'" data-type="pdf"><i class="fa fa-file-pdf-o"></i></a> <a class="btn btn-default btn-sm btn-gmap" href="'+portada.pdf+'.jpg" target="blank"  data-type="img"><i class="fa fa-file-image-o"></i></a></div>';
+                                    //contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><button class="btn btn-default btn-sm btn-gmap" data-file="'+_main_path+'/'+portada.pdf+'"><i class="fa fa-file-pdf-o"></i></button></div>';
+                                    contenido += '</div>';
+                                });
+                                contenido += '</div>';
+                            }
+                              
+                          infowindow.setContent(contenido);
+                          infowindow.open(map, marker);
+                        }
+                      })(marker, i));
+
+                        //console.log(val);
+                    });
+            },
+            fail:function(resp){
+                console.log(resp);
+            }
+        })
+    }
     
 }
