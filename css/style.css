@@ -18,7 +18,9 @@
 @font-face
 {
    font-family: "AvenirPersonalizada";
-   src: url("../fonts/AvenirNextLTPro-Regular.otf");
+   src: url("../fonts/AvenirNextLTPro-Regular.eot?#iefix") format('embedded-opentype'),
+         url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), 
+         url('../fonts/AvenirNextLTPro-Regular.ttf')  format('truetype');
 }
 @font-face
 {
