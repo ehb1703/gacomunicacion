@@ -876,7 +876,7 @@ var medios ={
                                 'color': 'white'
                             }).html('<p>\n\
                                     Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
-                                    </p>\n\
+                                    </p><br>\n\
                                       '+maps+'  \n\
                                     <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
                                     Acceso a página web con posibilidad de navegar sin abandonar la propia aplicación.\n\
@@ -906,10 +906,9 @@ var medios ={
         $('#footer').html('');
         $('#myModal2').modal('show');
         // medios.initMap();
-         uStates.draw("#statesvg", sampleData, tooltipHtml);
         //L.mapbox.accessToken = 'pk.eyJ1IjoicmNhc3RpbGxvYWd1aXJyIiwiYSI6ImNpbDFrdmM2bTM2bnd1YW0zYjZ2dTc2OG4ifQ._HEJ9An2hZK2ofuMNEFdMA';
         //var map = L.mapbox.map('map_canvas','mapbox.streets').setView([19.432608, -99.133208],6);
-         //uStates2.draw2("#statesvg", sampleData, tooltipHtml);
+         uStates2.draw2("#statesvg", sampleData, tooltipHtml);
     },
     campanas:function(){
 var maps='';
