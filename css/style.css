@@ -22,7 +22,7 @@
          url('../fonts/AvenirNextLTPro-Regular.woff') format('woff'), 
          url('../fonts/AvenirNextLTPro-Regular.ttf')  format('truetype');
 }
-@font-face
+/*@font-face
 {
    font-family: "AvenirBold";
    src: url("../fonts/AvenirNextLTPro-Bold.otf");
@@ -37,16 +37,18 @@
 {
    font-family: "AvenirPersonalizada_IE";
    src: url("../fonts/AvenirNextLTPro-Regular.eot");
+}*/
+@font-face
+{
+   font-family: "AvenirBold";
+   src: url("../fonts/AvenirNextLTPro-Bold.eot?#iefix") format('embedded-opentype'),
+        url('../fonts/AvenirNextLTPro-Bold.woff') format('woff'), 
+        url('../fonts/AvenirNextLTPro-Bold.ttf')  format('truetype');
 }
 @font-face
 {
-   font-family: "AvenirBold_IE";
-   src: url("../fonts/AvenirNextLTPro-Bold.eot");
-}
-@font-face
-{
-   font-family: "AvenirIt_IE";
-   src: url("../fonts/AvenirNextLTPro-It.eot");
+   font-family: "AvenirIt";
+   src: url("../fonts/AvenirNextLTPro-It.eot#iefix") format('embedded-opentype'),
    font-style: 'Italic';
 }
 
