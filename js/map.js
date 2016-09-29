@@ -1218,18 +1218,41 @@ uStates2.draw2 = function(id, data, toolTip){
                 'z-index':1000
 
             }); */
-            var contenido = '<div style="width:270px; height:190px;overflow-y:auto;overflow-x: hidden;color:black;background-color:#87a9b3;">';
-                 contenido += '<div style="width:250px;display:block;overflow:hidden;border-radius: 1px solid silver;margin-bottom:4px;border-bottom:1px solid gray;color:black">';
-                contenido += '  <div style="width:70px;height:70px;float:left;"><img src="http://187.247.253.5/siscap.la/public/img/portadas/thumbs/thumb-110.jpg" width="70px" height="70px"></div>';
-                contenido += '  <div style="width:177px;font-weight:bold;float:right;padding-left:3px;">PERIODICO</div>';
-                contenido += '  <div style="width:174px;float:right;padding:3px;font-size:12px;"></div>';
-                contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><a class="btn btn-default btn-sm btn-gmap" target="blank" href="" data-type="pdf"><i class="fa fa-file-pdf-o"></i></a> <a class="btn btn-default btn-sm btn-gmap" href=".jpg" target="blank"  data-type="img"><i class="fa fa-file-image-o"></i></a></div>';
-                //contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><button class="btn btn-default btn-sm btn-gmap" data-file="'+_main_path+'/'+portada.pdf+'"><i class="fa fa-file-pdf-o"></i></button></div>';
-                contenido += '</div>'; 
-             contenido += '</div>'; 
-            $('#tabla-notas').html('').append(contenido); 
-            console.log(d3.event.pageX+' '+d3.event.pageY);
-         
+
+
+            $.ajax({
+            url:'http://187.247.253.5/external/services/mail/Classes/Cobertura.php',
+            data:{'estado':d.n},
+            type:'GET',
+            dataType:'jsonp',
+            crossDomain : true,
+            success:function(resp){
+             console.log(resp);
+
+                $.each(resp, function(i, val){
+                     
+                  var contenido = 'No hay periodicos disponibles.';
+
+                    if(val!='') {
+                        contenido = '<div style="width:270px; height:190px;overflow-y:auto;overflow-x: hidden;color:black;background-color: #74acbd;border-radius: 4px;">';
+                        $.each(val.data,function(index,portada){
+                            contenido += '<div style="width:250px;display:block;overflow:hidden;border-radius: 1px solid silver;margin-bottom:4px;border-bottom:1px solid gray;color:black">';
+                            contenido += '  <div style="width:70px;height:70px;float:left;"><img src="http://187.247.253.5/siscap.la/public/img/portadas/thumbs/thumb-'+portada.id+'.jpg" width="70px" height="70px"></div>';
+                            contenido += '  <div style="width:177px;font-weight:bold;float:right;padding-left:3px;">'+portada.periodico+'</div>';
+                            contenido += '  <div style="width:174px;float:right;padding:3px;font-size:12px;">'+(portada.titulo.length>30?portada.titulo.substring(0,30)+'...':portada.titulo)+'</div>';
+                            contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><a class="btn btn-default btn-sm btn-gmap" target="blank" href="'+portada.pdf+'" data-type="pdf"><i class="fa fa-file-pdf-o"></i></a> <a class="btn btn-default btn-sm btn-gmap" href="'+portada.pdf+'.jpg" target="blank"  data-type="img"><i class="fa fa-file-image-o"></i></a></div>';
+                            //contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><button class="btn btn-default btn-sm btn-gmap" data-file="'+_main_path+'/'+portada.pdf+'"><i class="fa fa-file-pdf-o"></i></button></div>';
+                            contenido += '</div>';
+                        });
+                        contenido += '</div>';
+                    }
+                     $('#tabla-notas').html('').append(contenido); 
+                    });
+            },
+            fail:function(resp){
+                console.log(resp);
+            }
+        });
         }
         function constTable(obj){
             var table = '';
