@@ -825,7 +825,7 @@ var medios ={
                 <div id="map" style="position:relative">\n\
                     <div id="tooltip"></div> <!-- aqui se despliegan los nombres de los estados -->\n\
                     <svg width="100%" height="450" id="statesvg" style="margin-left:8%;"></svg> <!-- area de dibujo -->\n\
-                    <div id="table-map" class="row"></div>\n\
+                    <div id="table-map2" class="row"></div>\n\
                 </div>\n\
             </div>\n\
         </section> ';
@@ -875,7 +875,7 @@ var medios ={
                                 'background-color': '#3e6571',
                                 'color': 'white'
                             }).html('<p>\n\
-                                    Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
+                                    Servicio que tiene como objeto informar, oportuna y verazmente, de la publicación de notas sobre los temas y personajes de interés.\n\
                                     </p><br>\n\
                                       '+maps+'  \n\
                                     <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\

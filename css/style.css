@@ -581,6 +581,12 @@ footer a, footer a:hover {
     right: 6%;
     width: 300px;
   }
+  #table-map2{
+    position: absolute;
+    top: 6%;
+    right: 6%;
+    width: 300px;
+  }
   #titulo-map{
     color: white;
   }
@@ -596,6 +602,11 @@ footer a, footer a:hover {
 
   #tabla-emisora{
     top:10px;
+  }
+
+  #tabla-notas{
+    top:10px;
+    padding-left: 3px;
   }
 
   #table-tb{

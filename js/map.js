@@ -1183,24 +1183,8 @@ var load = function( state, option ) {
     var uStates2={};
 uStates2.draw2 = function(id, data, toolTip){     
         function mouseOver(d){
-            d3.select("#tooltip").transition().duration(200).style("opacity", .9);      
-            d3.select("#tooltip").html(toolTip(d.n, data[d.id], d.e, d.m))  
-                .style("left", (d3.event.pageX-250) + "px")     
-                .style("top", (d3.event.pageY - 200) + "px")
-                .style("z-index", 1000);
             d3.select("#"+d.id)
                 .style("fill", function(d){ return data[d.id].alter_color; } );
-             
-            
-            $('#table-map').html('').append('<div class="col-md-12">\n\
-                    <div id="titulo-map-div" class="col-md-12">\n\
-                        <span id="titulo-map">'+d.n+'</span> <span id="conteo-map">'+d.m+' medios</span>\n\
-                    </div>\n\
-                    <div id="tabla-emisora" class="col-md-12">\n\
-                        <table class="table" id="table-tb">\n\
-                        </table>\n\
-                    <div>\n\
-                </div>');
             
         }
 
@@ -1213,12 +1197,38 @@ uStates2.draw2 = function(id, data, toolTip){
                 } );
         }
         function click(d){
-           /*var tbody = '<tr class="text-center"><td>FM</td><td>AM</td><td>TV</td></tr>';
-            $.each(d.data,function(i,val){
-                tbody+='<tr class="text-center"><td>'+val.FM+'</td><td>'+val.AM+'</td><td>'+val.TV+'</td></tr>';
-            });       
-            $('#table-tb').html('').append(tbody);  */    
-            console.log(d);
+
+             $('#table-map2').html('').append('<div class="col-md-12">\n\
+                    <div id="titulo-map-div" class="col-md-12">\n\
+                        <span id="titulo-map">'+d.n+'</span> <span id="conteo-map">'+d.m+' medios</span>\n\
+                    </div>\n\
+                    <div id="tabla-notas" class="col-md-12">\n\
+                    <div>\n\
+                </div>');
+           /*
+            d3.select("#tooltip").transition().duration(200).style("opacity", .9);      
+            d3.select("#tooltip").html(toolTip(d.n, data[d.id], d.e, d.m))  
+                .style("left", (d3.event.pageX-250) + "px")     
+                .style("top", (d3.event.pageY - 200) + "px")
+                .style("z-index", 1000);
+            $('#div').css({
+                'border': '1px solid red',
+                'left':d3.event.pageX+'px',
+                'top':d3.event.pageY+'px',
+                'z-index':1000
+
+            }); */
+            var contenido = '<div style="width:270px; height:190px;overflow-y:auto;overflow-x: hidden;color:black;background-color:#87a9b3;">';
+                 contenido += '<div style="width:250px;display:block;overflow:hidden;border-radius: 1px solid silver;margin-bottom:4px;border-bottom:1px solid gray;color:black">';
+                contenido += '  <div style="width:70px;height:70px;float:left;"><img src="http://187.247.253.5/siscap.la/public/img/portadas/thumbs/thumb-110.jpg" width="70px" height="70px"></div>';
+                contenido += '  <div style="width:177px;font-weight:bold;float:right;padding-left:3px;">PERIODICO</div>';
+                contenido += '  <div style="width:174px;float:right;padding:3px;font-size:12px;"></div>';
+                contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><a class="btn btn-default btn-sm btn-gmap" target="blank" href="" data-type="pdf"><i class="fa fa-file-pdf-o"></i></a> <a class="btn btn-default btn-sm btn-gmap" href=".jpg" target="blank"  data-type="img"><i class="fa fa-file-image-o"></i></a></div>';
+                //contenido += '  <div style="width:176px;float:right;padding:2px;font-size:17px;"><button class="btn btn-default btn-sm btn-gmap" data-file="'+_main_path+'/'+portada.pdf+'"><i class="fa fa-file-pdf-o"></i></button></div>';
+                contenido += '</div>'; 
+             contenido += '</div>'; 
+            $('#tabla-notas').html('').append(contenido); 
+            console.log(d3.event.pageX+' '+d3.event.pageY);
          
         }
         function constTable(obj){
