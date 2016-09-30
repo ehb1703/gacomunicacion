@@ -957,7 +957,9 @@ console.log(screen.width);
                                 'color': 'white'
                             }).html('<p>\n\
                                     Servicio personalizado que tiene como objeto mantenerlo informado sobre el comportamiento de las campañas institucionales y/o comerciales (transmisión de spots), tanto del cliente como de su competencia.\n\
-                                    </p><ol style="list-style-type: circle; padding-left: 2em;">\n\
+                                    </p><br>\n\
+                                    '+maps+
+                                    '<ol style="list-style-type: circle; padding-left: 2em;">\n\
                                     <li>\n\
                                      Monitoreo simultáneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza.\n\
                                     </li>\n\
@@ -985,7 +987,7 @@ console.log(screen.width);
                                      <li>\n\
                                      Grabación en audio (24 horas) de transmisión de emisoras.\n\
                                     </li></ol><br><br>\n\
-                                    '+maps);
+                                    ');
         $('#footer').html('');
         $('#myModal2').modal('show');
          uStates.draw("#statesvg", sampleData, tooltipHtml);
