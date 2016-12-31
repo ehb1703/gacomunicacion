@@ -11,11 +11,11 @@
     100% Free To use For Personal And Commercial Use.
 
     IN EXCHANGE JUST TELL PEOPLE ABOUT THIS WEBSITE
-   
+
 ========================================================  */
 
 $(document).ready(function () {
-    setTimeout (medios.modal(), 4000); 
+    setTimeout (medios.modal(), 4000);
      if(screen.width < 990){
                Page.pantallaChica();
             }else{
@@ -25,8 +25,8 @@ $(document).ready(function () {
         $('#cobertura-list ul li').on('click',function(){
             medios.event($(this).attr('id'));
         });
-        
-    // Script de Scroll 
+
+    // Script de Scroll
         $('.scroll-me a').bind('click', function (event) {
         var $anchor = $(this);
         var x= $($anchor.attr('href')).offset();
@@ -58,28 +58,28 @@ $(document).ready(function () {
 
             // Checking for CSS 3D transformation support
     $.support.css3d = supportsCSS3D();
-    
+
     var formContainer = $('#formContainer');
-    
+
     formContainer.find('form').submit(function(e){
         // Preventing form submissions. If you implement
         // a backend, you might want to remove this code
         e.preventDefault();
     });
-    
-    // A helper function that checks for the 
+
+    // A helper function that checks for the
     // support of the 3D CSS3 transformations.
     function supportsCSS3D() {
         var props = [
             'perspectiveProperty', 'WebkitPerspective', 'MozPerspective'
         ], testDom = document.createElement('a');
-          
+
         for(var i=0; i<props.length; i++){
             if(props[i] in testDom.style){
                 return true;
             }
         }
-        
+
         return false;
     }
 });
@@ -780,35 +780,24 @@ var medios ={
                             'background-color': '#3e6571',
                             'color': 'white'
                             }).html('<ol style="list-style-type: circle; padding-left: 2em;"><li >\n\
-                                     Publicación en página web personalizada de la totalidad de información transmitida con los audios y videos originales dentro de los 5 minutos siguientes al término de la nota.\n\
+                                     “Alertas informativas” mediante envío de audios y videos a teléfono celular y correos electrónicos, a más tardar a los cinco minutos de terminada su transmisión\n\
                                     </li>\n\
                                     <li>\n\
-                                     Consultas y reportes con acceso a base de datos sobre temas y personajes, que permiten interactividad con información histórica desde 2002 (cualitativa, cuantitativa y graficada). \n\
+                                     Publicación en página web personalizada de la totalidad de información transmitida con los audios y videos originales dentro de los 5 minutos siguientes al término de la nota \n\
                                     </li>\n\
                                     <li>\n\
-                                     Documento para impresión de notas.\n\
+                                     Consultas y reportes con acceso a base de datos sobre temas y personajes, que permiten interactividad con información histórica desde 2002 (cualitativa, cuantitativa y graficada)\n\
                                     </li>\n\
                                     <li>\n\
-                                     Transportación de información a Excel con acceso al testigo original de las notas.\n\
+                                     “Administración” de audios y videos originales (copiar a disco duro, Cd, Dvd o reenviar vía correo electrónico)\n\
                                     </li>\n\
                                     <li>\n\
-                                     “Administración” de audios y videos originales (copiar a disco duro, Cd, Dvd o reenviar vía correo electrónico).  \n\
+                                     De las 05:30 a las 00:00 envío de información  \n\
                                     </li>\n\
                                     <li>\n\
-                                     De las 05:30 a las 00:00 envío de información. \n\
+                                     Transcripción textual de información a solicitud expresa \n\
                                     </li>\n\
-                                    <li>\n\
-                                     “Alertas informativas” mediante envío de audios y videos a teléfono celular y correos electrónicos, a más tardar a los cinco minutos de terminada su transmisión. \n\
-                                    </li>\n\
-                                    <li>\n\
-                                     Transcripción textual de información a solicitud expresa. \n\
-                                    </li>\n\
-                                     <li>\n\
-                                     CD mensual con información transmitida –audios y videos-. \n\
-                                    </li>\n\
-                                     <li>\n\
-                                     Medios en línea. - Casi en “tiempo real” acceso a la totalidad de la información transmitida en los noticiarios monitoreados.\n\
-                                    </li></ol><br>\n\
+                                    </ol><br>\n\
                                     <p><span class="title-bold">COBERTURA.</span> - Notas emitidas en 4 mil 402 horas por 2 mil 716 sistemas noticiosos mensuales y analizadas por 96 profesionales en la materia, lo cual da como resultado un reporte objetivo y oportuno sobre el acontecer nacional e internacional. </p>\n\
                                     ' );
         $('#footer').html('');
@@ -830,7 +819,7 @@ var medios ={
             </div>\n\
         </section> ';
 
- 
+
 
  }else{
      maps += '<div class="col-md-12" id="cobertura-list">\n\
@@ -879,29 +868,31 @@ var medios ={
                                     </p><br>\n\
                                       '+maps+'  \n\
                                     <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
-                                    Acceso a página web con posibilidad de navegar sin abandonar la propia aplicación.\n\
+                                    Publicación en página web personalizada de la totalidad de información publicada en diarios y revistas con testigos\n\
                                     </li>\n\
                                     <li>\n\
-                                     Consulta de testigos originales (texto e imagen).\n\
+                                     Consultas y reportes con acceso a base de datos sobre temas y personajes, que permiten interactividad con información histórica (cualitativa, cuantitativa y graficada)\n\
                                     </li>\n\
                                     <li>\n\
-                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 revistas y principales portales en internet. La revisión de diarios se realiza sobre la publicación original impresa -no versiones en internet-.\n\
+                                     Consulta de testigos originales (texto e imagen)\n\
                                     </li>\n\
                                     <li>\n\
-                                     Envío de documento PDF por correo electrónico a las 6:30 horas de diarios de la CDMX, a las 8:30 horas del resto de los estados y publicación en página web desde las 00:30 horas.\n\
+                                     Monitoreo de 154 diarios de las 32 entidades federativas, 20 revistas y principales portales en internet. La revisión de diarios se realiza sobre la publicación original impresa -no versiones en internet-\n\
                                     </li>\n\
                                     <li>\n\
-                                     Reporte gráfico cuantitativo con el número de publicaciones por categoría (primeras planas, columnas, cartones, etc), analizando la información por fecha y personaje con consulta histórica. \n\
+                                     Con la información de la agenda temática, envío de documento PDF por correo electrónico a las 6:30 horas de diarios de la CDMX, a las 8:30 horas del resto de los estados y publicación en página web desde las 00:30 horas \n\
                                     </li>\n\
                                     <li>\n\
-                                    Número de publicaciones diarias por periódico.\n\
+                                    Reporte gráfico cuantitativo con el número de publicaciones por categoría (primeras planas, columnas, cartones, etc), analizando la información por fecha y personaje con consulta histórica\n\
                                     </li>\n\
                                     <li>\n\
-                                     Consulta de la totalidad de información publicada en los diarios auditados.\n\
+                                     Número de publicaciones diarias por periódico\n\
                                     </li>\n\
                                     <li>\n\
-                                     Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad. \n\
-                                    </li></ol><br>\n\
+                                     Consulta de la totalidad de información publicada en los diarios auditados \n\
+                                    </li>\n\
+                                    <li>Mapa de la República Mexicana regionalizado ubicando el número de notas publicadas por entidad</li>\n\
+                                    </ol><br>\n\
                                     ');
         $('#footer').html('');
         $('#myModal2').modal('show');
@@ -961,31 +952,31 @@ console.log(screen.width);
                                     '+maps+
                                     '<ol style="list-style-type: circle; padding-left: 2em;">\n\
                                     <li>\n\
-                                     Monitoreo simultáneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza.\n\
+                                     Monitoreo simultáneo y en “tiempo real” de estaciones de radio y televisión abierta disponibles en cada plaza\n\
                                     </li>\n\
                                     <li>\n\
-                                     Reconocimiento de emisiones en 3 segundos.\n\
+                                     Reconocimiento de emisiones en 3 segundos\n\
                                     </li>\n\
                                     <li>\n\
-                                     “Testigo” auditivo de la transmisión original (3 segundos previos y posteriores al spot auditado).\n\
+                                     “Testigo” auditivo de la transmisión original (3 segundos previos y posteriores al spot auditado)\n\
                                     </li>\n\
                                     <li>\n\
-                                     Generación de información, reportes y gráficos “en línea”.\n\
+                                     Generación de información, reportes y gráficos “en línea”\n\
                                     </li>\n\
                                     <li>\n\
-                                    Detección de inconsistencias en pautas contratadas.\n\
+                                    Detección de inconsistencias en pautas contratadas\n\
                                     </li>\n\
                                     <li>\n\
-                                     Consulta por ciudad, hora, empresa, versión y grupo emisor.\n\
+                                     Consulta por ciudad, hora, empresa, versión y grupo emisor\n\
                                     </li>\n\
                                     <li>\n\
-                                     Auditoría de transmisiones 24 x 7 x 365. \n\
+                                     Auditoría de transmisiones 24 x 7 x 365 \n\
                                     </li>\n\
                                      <li>\n\
-                                     Posibilidad de realizar “búsquedas históricas” de información. \n\
+                                     Posibilidad de realizar “búsquedas históricas” de información \n\
                                     </li>\n\
                                      <li>\n\
-                                     Grabación en audio (24 horas) de transmisión de emisoras.\n\
+                                     Grabación en audio (24 horas) de transmisión de emisoras\n\
                                     </li></ol><br><br>\n\
                                     ');
         $('#footer').html('');
@@ -1006,19 +997,19 @@ console.log(screen.width);
                                      Seguimiento personalizado las 24 horas del día por cuenta monitoreada\n\
                                     </li>\n\
                                     <li>\n\
-                                     Evaluación de tweets, indicando número de tweets, alcance e impactos generados.\n\
+                                     Evaluación de tweets, indicando número de tweets, alcance e impactos generados\n\
                                     </li>\n\
                                     <li>\n\
-                                     Estructura y contenidos diseñados a las necesidades del cliente.\n\
+                                     Estructura y contenidos diseñados a las necesidades del cliente\n\
                                     </li>\n\
                                     <li>\n\
-                                     Gráficas a través del portal de internet con acceso mediante usuario y password.\n\
+                                     Gráficas a través del portal de internet con acceso mediante usuario y password\n\
                                     </li>\n\
                                     <li>\n\
-                                    Envío de reportes quincenales de forma electrónica con la información arriba mencionada, incluyendo gráficas.\n\
+                                    Envío de reportes quincenales de forma electrónica con la información arriba mencionada, incluyendo gráficas\n\
                                     </li>\n\
                                     <li>\n\
-                                     Entrega mensual de Cd conteniendo los reportes del periodo.\n\
+                                     Entrega mensual de Cd conteniendo los reportes del periodo\n\
                                     </li></ol>\n\
                                     ');
         $('#footer').html('');
@@ -1035,25 +1026,25 @@ console.log(screen.width);
                                     <p>Acceso a página web con posibilidad de navegar desde los dispositivos antes señalados, sin necesidad de abandonar la propia aplicación.</p>\n\
                                     <p>Generación de gráficos y reportes ejecutivos “en línea” considerando los parámetros siguientes:</p>\n\
                                     <ol style="list-style-type: circle; padding-left: 2em;"><li>\n\
-                                     Reporte gráfico sobre el análisis cuantitativo, cualitativo y tiempo asignado a las noticias sobre los temas y/o personajes monitoreados, hasta 30 días anteriores.\n\
+                                     Reporte gráfico sobre el análisis cuantitativo, cualitativo y tiempo asignado a las noticias sobre los temas y/o personajes monitoreados, hasta 30 días anteriores\n\
                                     </li>\n\
                                     <li>\n\
-                                     Posibilidad de elegir la información de un día, tema y/o personaje en particular a graficar.\n\
+                                     Posibilidad de elegir la información de un día, tema y/o personaje en particular a graficar\n\
                                     </li>\n\
                                     <li>\n\
-                                     Reporte cualitativo con acceso directo a los testigos originales (audio, video, notas publicadas, spot y menciones en redes).\n\
+                                     Reporte cualitativo con acceso directo a los testigos originales (audio, video, notas publicadas, spot y menciones en redes)\n\
                                     </li>\n\
                                     <li>\n\
-                                     Tipo de información transmitida.\n\
+                                     Tipo de información transmitida\n\
                                     </li>\n\
                                     <li>\n\
-                                    Ubicación de las notas.\n\
+                                    Ubicación de las notas\n\
                                     </li>\n\
                                     <li>\n\
-                                     Reporte de tendencia informativa (Comportamiento histórico de la información –mensual, quincenal, semanal o diario-).\n\
+                                     Reporte de tendencia informativa (Comportamiento histórico de la información –mensual, quincenal, semanal o diario-)\n\
                                     </li>\n\
                                     <li>\n\
-                                     Calificación y número de menciones por sistema informativo.\n\
+                                     Calificación y número de menciones por sistema informativo\n\
                                     </li></ol>\n\
                                     ');
         $('#footer').html('');
@@ -1064,7 +1055,7 @@ console.log(screen.width);
             center: {lat: 19.432608, lng: -99.133208},
             zoom: 5
           });
-          
+
     },
     points:function(){
         $.ajax({
@@ -1101,7 +1092,7 @@ console.log(screen.width);
                                 });
                                 contenido += '</div>';
                             }
-                              
+
                           infowindow.setContent(contenido);
                           infowindow.open(map, marker);
                         }
@@ -1115,5 +1106,5 @@ console.log(screen.width);
             }
         })
     }
-    
+
 }
